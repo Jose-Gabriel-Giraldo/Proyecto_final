@@ -1,0 +1,18 @@
+# ninja log v6
+45	1781	8154146652124204	proyecto_final_autogen/timestamp	2d10de0d7ab27eb9
+45	1781	8154146652124204	proyecto_final_autogen/mocs_compilation.cpp	2d10de0d7ab27eb9
+1971	4625	8154146671343500	CMakeFiles/proyecto_final.dir/mainwindow.cpp.obj	1d2d89bce2b56c2d
+45	1781	8154146652124204	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/timestamp	2d10de0d7ab27eb9
+45	1781	8154146652124204	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/mocs_compilation.cpp	2d10de0d7ab27eb9
+1783	2933	8154146669514206	CMakeFiles/proyecto_final.dir/main.cpp.obj	8febd5a744a939e4
+3891	7093	8154146522850519	CMakeFiles/proyecto_final.dir/proyecto_final_autogen/mocs_compilation.cpp.obj	4b16482acb822cac
+4625	6897	8154146697934033	proyecto_final.exe	987ebfa3864d07d7
+4690	5588	8154146530933586	CMakeFiles/proyecto_final.dir/entidad.cpp.obj	c9c7e12c04e82ec4
+39	1571	8154147855553642	proyecto_final_autogen/timestamp	2d10de0d7ab27eb9
+39	1571	8154147855553642	proyecto_final_autogen/mocs_compilation.cpp	2d10de0d7ab27eb9
+39	1571	8154147855553642	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/timestamp	2d10de0d7ab27eb9
+39	1571	8154147855553642	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/mocs_compilation.cpp	2d10de0d7ab27eb9
+1574	2935	8154147870900835	CMakeFiles/proyecto_final.dir/main.cpp.obj	8febd5a744a939e4
+1937	2992	8154147874533644	CMakeFiles/proyecto_final.dir/fisicaparabolica.cpp.obj	ffa1fc6d2fd7c78
+1748	4671	8154147872636232	CMakeFiles/proyecto_final.dir/mainwindow.cpp.obj	1d2d89bce2b56c2d
+4671	6991	8154147901873059	proyecto_final.exe	93a007186d21331e
