@@ -303,9 +303,27 @@
 			null
 		],
 		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/bananamutante.h",
+			"MU",
+			"EWIEGA46WW/moc_bananamutante.cpp",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/configuraciondificultad.h",
+			"MU",
+			"EWIEGA46WW/moc_configuraciondificultad.cpp",
+			null
+		],
+		[
 			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/entidad.h",
 			"MU",
 			"EWIEGA46WW/moc_entidad.cpp",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/fisicaarrastre.h",
+			"MU",
+			"EWIEGA46WW/moc_fisicaarrastre.cpp",
 			null
 		],
 		[
@@ -315,9 +333,39 @@
 			null
 		],
 		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/fisicapendular.h",
+			"MU",
+			"EWIEGA46WW/moc_fisicapendular.cpp",
+			null
+		],
+		[
 			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/morty.h",
+			"MU",
+			"EWIEGA46WW/moc_morty.cpp",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/personaje.h",
+			"MU",
+			"EWIEGA46WW/moc_personaje.cpp",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/proyectil.h",
+			"MU",
+			"EWIEGA46WW/moc_proyectil.cpp",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/rick.h",
+			"MU",
+			"EWIEGA46WW/moc_rick.cpp",
 			null
 		],
 		[
@@ -335,7 +383,6 @@
 		"MINGW_HAS_SECURE_API=1",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
-		"QT_NEEDS_QMAIN",
 		"QT_WIDGETS_LIB",
 		"UNICODE",
 		"WIN32",
@@ -398,12 +445,32 @@
 	"SOURCES" : 
 	[
 		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/bananamutante.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/configuraciondificultad.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/entidad.cpp",
 			"MU",
 			null
 		],
 		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/fisicaarrastre.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/fisicaparabolica.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/fisicapendular.cpp",
 			"MU",
 			null
 		],
@@ -414,6 +481,26 @@
 		],
 		[
 			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/morty.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/personaje.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/proyectil.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/rick.cpp",
 			"MU",
 			null
 		]

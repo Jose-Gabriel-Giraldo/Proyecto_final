@@ -50,7 +50,7 @@ cmake_ninja_workdir = C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Unive
 build cmake_object_order_depends_target_proyecto_final: phony || proyecto_final_autogen proyecto_final_autogen/mocs_compilation.cpp proyecto_final_autogen/timestamp proyecto_final_autogen_timestamp_deps
 
 build CMakeFiles/proyecto_final.dir/proyecto_final_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__proyecto_final_unscanned_Debug C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_proyecto_final
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\proyecto_final.dir\proyecto_final_autogen\mocs_compilation.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/include" -isystem C:/Qt/6.6.3/mingw_64/include/QtCore -isystem C:/Qt/6.6.3/mingw_64/include -isystem C:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.3/mingw_64/include/QtGui
@@ -58,7 +58,7 @@ build CMakeFiles/proyecto_final.dir/proyecto_final_autogen/mocs_compilation.cpp.
   OBJECT_FILE_DIR = CMakeFiles\proyecto_final.dir\proyecto_final_autogen
 
 build CMakeFiles/proyecto_final.dir/main.cpp.obj: CXX_COMPILER__proyecto_final_unscanned_Debug C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/main.cpp || cmake_object_order_depends_target_proyecto_final
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\proyecto_final.dir\main.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/include" -isystem C:/Qt/6.6.3/mingw_64/include/QtCore -isystem C:/Qt/6.6.3/mingw_64/include -isystem C:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.3/mingw_64/include/QtGui
@@ -66,7 +66,7 @@ build CMakeFiles/proyecto_final.dir/main.cpp.obj: CXX_COMPILER__proyecto_final_u
   OBJECT_FILE_DIR = CMakeFiles\proyecto_final.dir
 
 build CMakeFiles/proyecto_final.dir/mainwindow.cpp.obj: CXX_COMPILER__proyecto_final_unscanned_Debug C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/mainwindow.cpp || cmake_object_order_depends_target_proyecto_final
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\proyecto_final.dir\mainwindow.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/include" -isystem C:/Qt/6.6.3/mingw_64/include/QtCore -isystem C:/Qt/6.6.3/mingw_64/include -isystem C:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.3/mingw_64/include/QtGui
@@ -74,7 +74,7 @@ build CMakeFiles/proyecto_final.dir/mainwindow.cpp.obj: CXX_COMPILER__proyecto_f
   OBJECT_FILE_DIR = CMakeFiles\proyecto_final.dir
 
 build CMakeFiles/proyecto_final.dir/entidad.cpp.obj: CXX_COMPILER__proyecto_final_unscanned_Debug C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/entidad.cpp || cmake_object_order_depends_target_proyecto_final
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\proyecto_final.dir\entidad.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/include" -isystem C:/Qt/6.6.3/mingw_64/include/QtCore -isystem C:/Qt/6.6.3/mingw_64/include -isystem C:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.3/mingw_64/include/QtGui
@@ -82,8 +82,72 @@ build CMakeFiles/proyecto_final.dir/entidad.cpp.obj: CXX_COMPILER__proyecto_fina
   OBJECT_FILE_DIR = CMakeFiles\proyecto_final.dir
 
 build CMakeFiles/proyecto_final.dir/fisicaparabolica.cpp.obj: CXX_COMPILER__proyecto_final_unscanned_Debug C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/fisicaparabolica.cpp || cmake_object_order_depends_target_proyecto_final
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\proyecto_final.dir\fisicaparabolica.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/include" -isystem C:/Qt/6.6.3/mingw_64/include/QtCore -isystem C:/Qt/6.6.3/mingw_64/include -isystem C:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.3/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\proyecto_final.dir
+  OBJECT_FILE_DIR = CMakeFiles\proyecto_final.dir
+
+build CMakeFiles/proyecto_final.dir/fisicapendular.cpp.obj: CXX_COMPILER__proyecto_final_unscanned_Debug C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/fisicapendular.cpp || cmake_object_order_depends_target_proyecto_final
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\proyecto_final.dir\fisicapendular.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/include" -isystem C:/Qt/6.6.3/mingw_64/include/QtCore -isystem C:/Qt/6.6.3/mingw_64/include -isystem C:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.3/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\proyecto_final.dir
+  OBJECT_FILE_DIR = CMakeFiles\proyecto_final.dir
+
+build CMakeFiles/proyecto_final.dir/fisicaarrastre.cpp.obj: CXX_COMPILER__proyecto_final_unscanned_Debug C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/fisicaarrastre.cpp || cmake_object_order_depends_target_proyecto_final
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\proyecto_final.dir\fisicaarrastre.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/include" -isystem C:/Qt/6.6.3/mingw_64/include/QtCore -isystem C:/Qt/6.6.3/mingw_64/include -isystem C:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.3/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\proyecto_final.dir
+  OBJECT_FILE_DIR = CMakeFiles\proyecto_final.dir
+
+build CMakeFiles/proyecto_final.dir/personaje.cpp.obj: CXX_COMPILER__proyecto_final_unscanned_Debug C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/personaje.cpp || cmake_object_order_depends_target_proyecto_final
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\proyecto_final.dir\personaje.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/include" -isystem C:/Qt/6.6.3/mingw_64/include/QtCore -isystem C:/Qt/6.6.3/mingw_64/include -isystem C:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.3/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\proyecto_final.dir
+  OBJECT_FILE_DIR = CMakeFiles\proyecto_final.dir
+
+build CMakeFiles/proyecto_final.dir/proyectil.cpp.obj: CXX_COMPILER__proyecto_final_unscanned_Debug C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/proyectil.cpp || cmake_object_order_depends_target_proyecto_final
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\proyecto_final.dir\proyectil.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/include" -isystem C:/Qt/6.6.3/mingw_64/include/QtCore -isystem C:/Qt/6.6.3/mingw_64/include -isystem C:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.3/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\proyecto_final.dir
+  OBJECT_FILE_DIR = CMakeFiles\proyecto_final.dir
+
+build CMakeFiles/proyecto_final.dir/morty.cpp.obj: CXX_COMPILER__proyecto_final_unscanned_Debug C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/morty.cpp || cmake_object_order_depends_target_proyecto_final
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\proyecto_final.dir\morty.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/include" -isystem C:/Qt/6.6.3/mingw_64/include/QtCore -isystem C:/Qt/6.6.3/mingw_64/include -isystem C:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.3/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\proyecto_final.dir
+  OBJECT_FILE_DIR = CMakeFiles\proyecto_final.dir
+
+build CMakeFiles/proyecto_final.dir/rick.cpp.obj: CXX_COMPILER__proyecto_final_unscanned_Debug C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/rick.cpp || cmake_object_order_depends_target_proyecto_final
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\proyecto_final.dir\rick.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/include" -isystem C:/Qt/6.6.3/mingw_64/include/QtCore -isystem C:/Qt/6.6.3/mingw_64/include -isystem C:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.3/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\proyecto_final.dir
+  OBJECT_FILE_DIR = CMakeFiles\proyecto_final.dir
+
+build CMakeFiles/proyecto_final.dir/bananamutante.cpp.obj: CXX_COMPILER__proyecto_final_unscanned_Debug C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/bananamutante.cpp || cmake_object_order_depends_target_proyecto_final
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\proyecto_final.dir\bananamutante.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/include" -isystem C:/Qt/6.6.3/mingw_64/include/QtCore -isystem C:/Qt/6.6.3/mingw_64/include -isystem C:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.3/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\proyecto_final.dir
+  OBJECT_FILE_DIR = CMakeFiles\proyecto_final.dir
+
+build CMakeFiles/proyecto_final.dir/configuraciondificultad.cpp.obj: CXX_COMPILER__proyecto_final_unscanned_Debug C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/configuraciondificultad.cpp || cmake_object_order_depends_target_proyecto_final
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\proyecto_final.dir\configuraciondificultad.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/include" -isystem C:/Qt/6.6.3/mingw_64/include/QtCore -isystem C:/Qt/6.6.3/mingw_64/include -isystem C:/Qt/6.6.3/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.3/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.3/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\proyecto_final.dir
@@ -97,10 +161,9 @@ build CMakeFiles/proyecto_final.dir/fisicaparabolica.cpp.obj: CXX_COMPILER__proy
 #############################################
 # Link the executable proyecto_final.exe
 
-build proyecto_final.exe: CXX_EXECUTABLE_LINKER__proyecto_final_Debug CMakeFiles/proyecto_final.dir/proyecto_final_autogen/mocs_compilation.cpp.obj CMakeFiles/proyecto_final.dir/main.cpp.obj CMakeFiles/proyecto_final.dir/mainwindow.cpp.obj CMakeFiles/proyecto_final.dir/entidad.cpp.obj CMakeFiles/proyecto_final.dir/fisicaparabolica.cpp.obj | C$:/Qt/6.6.3/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.6.3/mingw_64/lib/libQt6Gui.a C$:/Qt/6.6.3/mingw_64/lib/libQt6Core.a C$:/Qt/6.6.3/mingw_64/lib/libQt6EntryPoint.a || proyecto_final_autogen proyecto_final_autogen_timestamp_deps
+build proyecto_final.exe: CXX_EXECUTABLE_LINKER__proyecto_final_Debug CMakeFiles/proyecto_final.dir/proyecto_final_autogen/mocs_compilation.cpp.obj CMakeFiles/proyecto_final.dir/main.cpp.obj CMakeFiles/proyecto_final.dir/mainwindow.cpp.obj CMakeFiles/proyecto_final.dir/entidad.cpp.obj CMakeFiles/proyecto_final.dir/fisicaparabolica.cpp.obj CMakeFiles/proyecto_final.dir/fisicapendular.cpp.obj CMakeFiles/proyecto_final.dir/fisicaarrastre.cpp.obj CMakeFiles/proyecto_final.dir/personaje.cpp.obj CMakeFiles/proyecto_final.dir/proyectil.cpp.obj CMakeFiles/proyecto_final.dir/morty.cpp.obj CMakeFiles/proyecto_final.dir/rick.cpp.obj CMakeFiles/proyecto_final.dir/bananamutante.cpp.obj CMakeFiles/proyecto_final.dir/configuraciondificultad.cpp.obj | C$:/Qt/6.6.3/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.6.3/mingw_64/lib/libQt6Gui.a C$:/Qt/6.6.3/mingw_64/lib/libQt6Core.a || proyecto_final_autogen proyecto_final_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
-  LINK_FLAGS = -mwindows
-  LINK_LIBRARIES = C:/Qt/6.6.3/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.6.3/mingw_64/lib/libQt6Gui.a  C:/Qt/6.6.3/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.6.3/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = C:/Qt/6.6.3/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.6.3/mingw_64/lib/libQt6Gui.a  C:/Qt/6.6.3/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\proyecto_final.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

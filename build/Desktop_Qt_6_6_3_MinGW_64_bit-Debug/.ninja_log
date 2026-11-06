@@ -1,18 +1,38 @@
 # ninja log v6
-45	1781	8154146652124204	proyecto_final_autogen/timestamp	2d10de0d7ab27eb9
-45	1781	8154146652124204	proyecto_final_autogen/mocs_compilation.cpp	2d10de0d7ab27eb9
-1971	4625	8154146671343500	CMakeFiles/proyecto_final.dir/mainwindow.cpp.obj	1d2d89bce2b56c2d
-45	1781	8154146652124204	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/timestamp	2d10de0d7ab27eb9
-45	1781	8154146652124204	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/mocs_compilation.cpp	2d10de0d7ab27eb9
-1783	2933	8154146669514206	CMakeFiles/proyecto_final.dir/main.cpp.obj	8febd5a744a939e4
-3891	7093	8154146522850519	CMakeFiles/proyecto_final.dir/proyecto_final_autogen/mocs_compilation.cpp.obj	4b16482acb822cac
-4625	6897	8154146697934033	proyecto_final.exe	987ebfa3864d07d7
+30	1431	8157059184448212	proyecto_final_autogen/mocs_compilation.cpp	2d10de0d7ab27eb9
+1604	4492	8157059200208757	CMakeFiles/proyecto_final.dir/mainwindow.cpp.obj	1d2d89bce2b56c2d
+30	1431	8157059184448212	proyecto_final_autogen/timestamp	2d10de0d7ab27eb9
+1434	3159	8157059198506781	CMakeFiles/proyecto_final.dir/main.cpp.obj	8febd5a744a939e4
+2216	3596	8155310369111013	CMakeFiles/proyecto_final.dir/fisicaparabolica.cpp.obj	ffa1fc6d2fd7c78
+30	1431	8157059184448212	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/mocs_compilation.cpp	2d10de0d7ab27eb9
+30	1431	8157059184448212	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/timestamp	2d10de0d7ab27eb9
 4690	5588	8154146530933586	CMakeFiles/proyecto_final.dir/entidad.cpp.obj	c9c7e12c04e82ec4
-39	1571	8154147855553642	proyecto_final_autogen/timestamp	2d10de0d7ab27eb9
-39	1571	8154147855553642	proyecto_final_autogen/mocs_compilation.cpp	2d10de0d7ab27eb9
-39	1571	8154147855553642	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/timestamp	2d10de0d7ab27eb9
-39	1571	8154147855553642	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/mocs_compilation.cpp	2d10de0d7ab27eb9
-1574	2935	8154147870900835	CMakeFiles/proyecto_final.dir/main.cpp.obj	8febd5a744a939e4
-1937	2992	8154147874533644	CMakeFiles/proyecto_final.dir/fisicaparabolica.cpp.obj	ffa1fc6d2fd7c78
-1748	4671	8154147872636232	CMakeFiles/proyecto_final.dir/mainwindow.cpp.obj	1d2d89bce2b56c2d
-4671	6991	8154147901873059	proyecto_final.exe	93a007186d21331e
+3891	7093	8154146522850519	CMakeFiles/proyecto_final.dir/proyecto_final_autogen/mocs_compilation.cpp.obj	4b16482acb822cac
+4492	6664	8157059229090083	proyecto_final.exe	df81079079f7f0da
+2581	3967	8155310372809497	CMakeFiles/proyecto_final.dir/fisicapendular.cpp.obj	15356b1e0483ae4f
+2841	4025	8155310375411888	CMakeFiles/proyecto_final.dir/fisicaarrastre.cpp.obj	1b64f0f0cd0373d
+1853	3546	8157057056469168	CMakeFiles/proyecto_final.dir/personaje.cpp.obj	8c187fdec1afe17
+3311	4376	8157057071165423	CMakeFiles/proyecto_final.dir/configuraciondificultad.cpp.obj	1f108daafd6feb9f
+1712	3238	8157057295216175	CMakeFiles/proyecto_final.dir/proyectil.cpp.obj	57b9892d7fab3c83
+2135	3441	8157057299511895	CMakeFiles/proyecto_final.dir/rick.cpp.obj	fb5c8413e88317d7
+2434	3557	8157057302492401	CMakeFiles/proyecto_final.dir/bananamutante.cpp.obj	70ad482d758c19fa
+1777	3067	8157059201939950	CMakeFiles/proyecto_final.dir/morty.cpp.obj	e3d59e9e4d127e02
+18	2949	8157065711179247	build.ninja	c8e3b241a1e394c7
+28	5341	8157065762328803	proyecto_final_autogen/timestamp	2d10de0d7ab27eb9
+28	5341	8157065762328803	proyecto_final_autogen/mocs_compilation.cpp	2d10de0d7ab27eb9
+28	5341	8157065762328803	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/timestamp	2d10de0d7ab27eb9
+28	5341	8157065762328803	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/mocs_compilation.cpp	2d10de0d7ab27eb9
+7028	10763	8157065785634105	CMakeFiles/proyecto_final.dir/entidad.cpp.obj	31510e6bb5c4809e
+5828	11607	8157065773646200	CMakeFiles/proyecto_final.dir/main.cpp.obj	2b461abc18020913
+7609	12386	8157065791455171	CMakeFiles/proyecto_final.dir/fisicaparabolica.cpp.obj	7d723da323aea3ce
+8086	13248	8157065796214138	CMakeFiles/proyecto_final.dir/fisicapendular.cpp.obj	1721b83d26638849
+5343	13254	8157065768788872	CMakeFiles/proyecto_final.dir/proyecto_final_autogen/mocs_compilation.cpp.obj	645b0a9d62347e9
+8448	13574	8157065799828013	CMakeFiles/proyecto_final.dir/fisicaarrastre.cpp.obj	802d23578676d53e
+8944	13580	8157065804797634	CMakeFiles/proyecto_final.dir/personaje.cpp.obj	ce9409168bd9f027
+6400	13944	8157065779361633	CMakeFiles/proyecto_final.dir/mainwindow.cpp.obj	6323487fefa750e2
+9491	13954	8157065810270990	CMakeFiles/proyecto_final.dir/proyectil.cpp.obj	22ae5e441699c9ba
+10085	14246	8157065816202034	CMakeFiles/proyecto_final.dir/morty.cpp.obj	dc7940e6a6d36c1a
+10764	14410	8157065822992598	CMakeFiles/proyecto_final.dir/rick.cpp.obj	1880019eaa44fc88
+11607	14627	8157065831425110	CMakeFiles/proyecto_final.dir/bananamutante.cpp.obj	3c7faa42f3edf349
+12386	14738	8157065839226107	CMakeFiles/proyecto_final.dir/configuraciondificultad.cpp.obj	afbba88dd8f90098
+14739	20454	8157065862744419	proyecto_final.exe	4a51227f695be346
