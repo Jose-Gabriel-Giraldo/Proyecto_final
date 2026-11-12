@@ -4,7 +4,7 @@
 #include <cmath>
 
 Rick::Rick(double x, double y, double xMin, double xMax)
-    : Personaje(x, y, 60, 120, 5, new FisicaParabolica(1400.0)), combo(0), dirMovimiento(0), multiplicador(1.0),
+    : Personaje(x, y, 60, 120, 8, new FisicaParabolica(1400.0)), combo(0), dirMovimiento(0), multiplicador(1.0),
     recargaPortal(0), aturdido(0), recargaDisparo(0), tiempoDesdePortal(100), xMin(xMin), xMax(xMax) {}
 
 void Rick::actualizar(double dt) {
