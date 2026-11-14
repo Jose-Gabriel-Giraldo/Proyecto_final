@@ -37,9 +37,6 @@
 			"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
 			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
 			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
-			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake",
-			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake",
-			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
 			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
 			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake"
 		],
@@ -75,13 +72,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 75,
+				"line" : 73,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 58,
+				"line" : 59,
 				"parent" : 0
 			},
 			{
@@ -175,60 +172,6 @@
 				"parent" : 22
 			},
 			{
-				"command" : 7,
-				"file" : 6,
-				"line" : 41,
-				"parent" : 20
-			},
-			{
-				"file" : 12,
-				"parent" : 24
-			},
-			{
-				"command" : 10,
-				"file" : 12,
-				"line" : 39,
-				"parent" : 25
-			},
-			{
-				"command" : 9,
-				"file" : 8,
-				"line" : 111,
-				"parent" : 26
-			},
-			{
-				"command" : 8,
-				"file" : 7,
-				"line" : 76,
-				"parent" : 27
-			},
-			{
-				"file" : 11,
-				"parent" : 28
-			},
-			{
-				"command" : 7,
-				"file" : 11,
-				"line" : 52,
-				"parent" : 29
-			},
-			{
-				"file" : 10,
-				"parent" : 30
-			},
-			{
-				"command" : 6,
-				"file" : 10,
-				"line" : 61,
-				"parent" : 31
-			},
-			{
-				"command" : 6,
-				"file" : 10,
-				"line" : 76,
-				"parent" : 31
-			},
-			{
 				"command" : 9,
 				"file" : 8,
 				"line" : 111,
@@ -238,27 +181,27 @@
 				"command" : 8,
 				"file" : 7,
 				"line" : 76,
-				"parent" : 34
+				"parent" : 24
 			},
 			{
-				"file" : 14,
-				"parent" : 35
+				"file" : 11,
+				"parent" : 25
 			},
 			{
 				"command" : 7,
-				"file" : 14,
+				"file" : 11,
 				"line" : 52,
-				"parent" : 36
+				"parent" : 26
 			},
 			{
-				"file" : 13,
-				"parent" : 37
+				"file" : 10,
+				"parent" : 27
 			},
 			{
 				"command" : 6,
-				"file" : 13,
+				"file" : 10,
 				"line" : 61,
-				"parent" : 38
+				"parent" : 28
 			}
 		]
 	},
@@ -284,10 +227,6 @@
 				{
 					"backtrace" : 6,
 					"define" : "QT_GUI_LIB"
-				},
-				{
-					"backtrace" : 14,
-					"define" : "QT_NEEDS_QMAIN"
 				},
 				{
 					"backtrace" : 6,
@@ -373,18 +312,27 @@
 				18,
 				20,
 				22,
-				24
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "proyecto_final_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "proyecto_final_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "proyecto_final_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "proyecto_final::@6890427a1f51a3e7e1df",
@@ -411,7 +359,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-mwindows",
+				"fragment" : "",
 				"role" : "flags"
 			},
 			{
@@ -440,37 +388,22 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 32,
-				"fragment" : "-lmingw32",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 32,
-				"fragment" : "C:\\Qt\\6.6.3\\mingw_64\\lib\\libQt6EntryPoint.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 33,
-				"fragment" : "-lshell32",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 39,
+				"backtrace" : 29,
 				"fragment" : "-ld3d11",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 39,
+				"backtrace" : 29,
 				"fragment" : "-ldxgi",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 39,
+				"backtrace" : 29,
 				"fragment" : "-ldxguid",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 39,
+				"backtrace" : 29,
 				"fragment" : "-ld3d12",
 				"role" : "libraries"
 			},
@@ -505,7 +438,16 @@
 				18,
 				20,
 				22,
-				24
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42
 			]
 		},
 		{
@@ -524,7 +466,16 @@
 				19,
 				21,
 				23,
-				25
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				43
 			]
 		},
 		{
@@ -532,14 +483,14 @@
 			"sourceIndexes" : 
 			[
 				4,
-				26
+				44
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				27
+				45
 			]
 		}
 	],
@@ -681,6 +632,105 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "bananamutante.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "configuraciondificultad.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "configuraciondificultad.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "moduloaprendizaje.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "moduloaprendizaje.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "modulopercepcion.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "modulopercepcion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "modulorazonamiento.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "modulorazonamiento.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "moduloaccion.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "moduloaccion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "palmerajefe.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "palmerajefe.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "nivel.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "nivel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "nivelplantacion.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "nivelplantacion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "niveljefe.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "niveljefe.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

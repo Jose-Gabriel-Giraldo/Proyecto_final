@@ -345,9 +345,57 @@
 			null
 		],
 		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/moduloaccion.h",
+			"MU",
+			"EWIEGA46WW/moc_moduloaccion.cpp",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/moduloaprendizaje.h",
+			"MU",
+			"EWIEGA46WW/moc_moduloaprendizaje.cpp",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/modulopercepcion.h",
+			"MU",
+			"EWIEGA46WW/moc_modulopercepcion.cpp",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/modulorazonamiento.h",
+			"MU",
+			"EWIEGA46WW/moc_modulorazonamiento.cpp",
+			null
+		],
+		[
 			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/morty.h",
 			"MU",
 			"EWIEGA46WW/moc_morty.cpp",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/nivel.h",
+			"MU",
+			"EWIEGA46WW/moc_nivel.cpp",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/niveljefe.h",
+			"MU",
+			"EWIEGA46WW/moc_niveljefe.cpp",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/nivelplantacion.h",
+			"MU",
+			"EWIEGA46WW/moc_nivelplantacion.cpp",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/palmerajefe.h",
+			"MU",
+			"EWIEGA46WW/moc_palmerajefe.cpp",
 			null
 		],
 		[
@@ -485,7 +533,47 @@
 			null
 		],
 		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/moduloaccion.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/moduloaprendizaje.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/modulopercepcion.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/modulorazonamiento.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/morty.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/nivel.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/niveljefe.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/nivelplantacion.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/palmerajefe.cpp",
 			"MU",
 			null
 		],

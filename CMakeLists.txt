@@ -25,7 +25,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         tipo.h
         entidad.h entidad.cpp
-        ModeloFisico.h
+        modelofisico.h
         fisicaparabolica.h fisicaparabolica.cpp
         fisicapendular.h fisicapendular.cpp
         fisicaarrastre.h fisicaarrastre.cpp
@@ -35,6 +35,14 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         rick.h rick.cpp
         bananamutante.h bananamutante.cpp
         configuraciondificultad.h configuraciondificultad.cpp
+        moduloaprendizaje.h moduloaprendizaje.cpp
+        modulopercepcion.h modulopercepcion.cpp
+        modulorazonamiento.h modulorazonamiento.cpp
+        moduloaccion.h moduloaccion.cpp
+        palmerajefe.h palmerajefe.cpp
+        nivel.h nivel.cpp
+        nivelplantacion.h nivelplantacion.cpp
+        niveljefe.h niveljefe.cpp
     )
 else()
     if(ANDROID)

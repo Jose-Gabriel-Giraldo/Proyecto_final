@@ -72,13 +72,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 65,
+				"line" : 73,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 51,
+				"line" : 59,
 				"parent" : 0
 			},
 			{
@@ -313,7 +313,15 @@
 				20,
 				22,
 				24,
-				26
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42
 			]
 		}
 	],
@@ -431,7 +439,15 @@
 				20,
 				22,
 				24,
-				26
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42
 			]
 		},
 		{
@@ -451,7 +467,15 @@
 				21,
 				23,
 				25,
-				27
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				43
 			]
 		},
 		{
@@ -459,14 +483,14 @@
 			"sourceIndexes" : 
 			[
 				4,
-				28
+				44
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				29
+				45
 			]
 		}
 	],
@@ -619,6 +643,94 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "configuraciondificultad.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "moduloaprendizaje.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "moduloaprendizaje.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "modulopercepcion.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "modulopercepcion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "modulorazonamiento.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "modulorazonamiento.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "moduloaccion.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "moduloaccion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "palmerajefe.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "palmerajefe.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "nivel.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "nivel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "nivelplantacion.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "nivelplantacion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "niveljefe.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "niveljefe.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
