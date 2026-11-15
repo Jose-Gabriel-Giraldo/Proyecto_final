@@ -1,0 +1,43 @@
+<RCC>
+    <qresource prefix="/">
+        <file>recursos/banana_atacar.png</file>
+        <file>recursos/banana_caminar.png</file>
+        <file>recursos/banana_danado.png</file>
+        <file>recursos/banana_idle.png</file>
+        <file>recursos/cielo.png</file>
+        <file>recursos/jaula_idle.png</file>
+        <file>recursos/jaula_liberar.png</file>
+        <file>recursos/montanas.png</file>
+        <file>recursos/morty_atacar.png</file>
+        <file>recursos/morty_caminar.png</file>
+        <file>recursos/morty_correr.png</file>
+        <file>recursos/morty_danado.png</file>
+        <file>recursos/morty_idle.png</file>
+        <file>recursos/nivel1.png</file>
+        <file>recursos/nivel2.png</file>
+        <file>recursos/palmera_ataques.png</file>
+        <file>recursos/palmera_golpe.png</file>
+        <file>recursos/palmera_idle.png</file>
+        <file>recursos/palmera_muerte.png</file>
+        <file>recursos/plataforma.png</file>
+        <file>recursos/platanal.png</file>
+        <file>recursos/proyectiles_banano.png</file>
+        <file>recursos/proyectiles_explosion.png</file>
+        <file>recursos/proyectiles_hojas.png</file>
+        <file>recursos/proyectiles_onda.png</file>
+        <file>recursos/proyectiles_racimo.png</file>
+        <file>recursos/rick_atacar.png</file>
+        <file>recursos/rick_caminar.png</file>
+        <file>recursos/rick_correr.png</file>
+        <file>recursos/rick_danado.png</file>
+        <file>recursos/rick_idle.png</file>
+        <file>recursos/soldado_disparar.png</file>
+        <file>recursos/soldado_idle.png</file>
+        <file>recursos/soldado_muerte.png</file>
+        <file>recursos/trabajador_agradecer.png</file>
+        <file>recursos/trabajador_caminar.png</file>
+        <file>recursos/trabajador_correr.png</file>
+        <file>recursos/trabajador_huir.png</file>
+        <file>recursos/trabajador_idle.png</file>
+    </qresource>
+</RCC>

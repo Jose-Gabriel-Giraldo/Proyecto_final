@@ -12,17 +12,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
-set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
-)
-
-if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(proyecto_final
-        MANUAL_FINALIZATION
-        ${PROJECT_SOURCES}
+# Capa logica (clases de José): se comparte entre el juego y el programa de pruebas
+set(LOGICA
         tipo.h
         entidad.h entidad.cpp
         modelofisico.h
@@ -43,18 +34,27 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         nivel.h nivel.cpp
         nivelplantacion.h nivelplantacion.cpp
         niveljefe.h niveljefe.cpp
-    )
-else()
-    if(ANDROID)
-        add_library(proyecto_final SHARED
-            ${PROJECT_SOURCES}
-        )
-    else()
-        add_executable(proyecto_final
-            ${PROJECT_SOURCES}
-        )
-    endif()
-endif()
+)
+
+# Capa grafica (Qt)
+set(PROJECT_SOURCES
+        mainjuego.cpp
+        mainwindow.cpp
+        mainwindow.h
+        mainwindow.ui
+        hojasprites.h hojasprites.cpp
+        vistaplantacion.h vistaplantacion.cpp
+        recursos.qrc
+)
+
+qt_add_executable(proyecto_final
+    MANUAL_FINALIZATION
+    ${PROJECT_SOURCES}
+    ${LOGICA}
+)
+
+# Programa de pruebas por consola (el main.cpp original), sin interfaz grafica
+add_executable(pruebas_logica main.cpp ${LOGICA})
 
 target_link_libraries(proyecto_final PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
