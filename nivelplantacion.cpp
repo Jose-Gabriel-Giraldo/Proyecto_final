@@ -5,31 +5,50 @@
 #include "proyectil.h"
 #include <cmath>
 
-const double NivelPlantacion::ANCHO_MUNDO = 6400;
+const double NivelPlantacion::ANCHO_MUNDO = 15720;
 const double NivelPlantacion::ALTO_MUNDO = 720;
 const double NivelPlantacion::Y_SUELO = 640;
 const double NivelPlantacion::AGUA_INICIO = 2650;
 const double NivelPlantacion::AGUA_FIN = 3850;
-const double NivelPlantacion::X_ESTACION = 5700;
+const double NivelPlantacion::X_ESTACION = 15020;
 const double NivelPlantacion::TIEMPO_JAULA = 1.5;
 
 NivelPlantacion::NivelPlantacion()
     : morty(new Morty(100, Y_SUELO - 90)), checkpointX(100), izquierda(false), derecha(false), disparando(false),
     interactuar(false) {
-    xJaulas = {700, 2000, 3950, 4650, 5150};
+    xJaulas = {700, 2000, 3950, 4650, 5150, 7650, 9680, 11070, 14020};
+    yJaulas = {Y_SUELO, Y_SUELO, Y_SUELO, Y_SUELO, Y_SUELO, Y_SUELO, 170, 560, 370};
     progresoJaulas.assign(xJaulas.size(), 0.0);
 
-    bananas.push_back(new BananaMutante(450, Y_SUELO - 110, 300, 1100));
-    bananas.push_back(new BananaMutante(1500, Y_SUELO - 110, 1250, 1750));
-    bananas.push_back(new BananaMutante(2300, Y_SUELO - 110, 2100, 2600));
-    bananas.push_back(new BananaMutante(4100, Y_SUELO - 110, 3950, 4450));
+    huecos = {{AGUA_INICIO, AGUA_FIN}, {6000, 7200}, {10350, 11550}, {12350, 13550}};
+    checkpoints = {100, 1200, 2450, 3950, 5400, 5800, 7350, 8050, 10100, 11650, 12100, 13650, 14300};
 
-    for (double x : {4400.0, 4950.0, 5300.0}) bananas.push_back(new BananaMutante(x, Y_SUELO - 110, x, x + 70, true, 0, 500, 3));
+    plataformas = {{1350, 500, 260, 22},  {1700, 380, 220, 22},  {2150, 480, 260, 22}, {4300, 500, 300, 22},
+                   {4750, 400, 250, 22},  {7350, 470, 260, 22},  {8050, 500, 200, 22}, {8300, 370, 200, 22},
+                   {8600, 250, 500, 22},  {9300, 250, 180, 22},  {9600, 170, 220, 22}, {11030, 560, 180, 22},
+                   {13700, 500, 180, 22}, {13950, 370, 200, 22}};
 
-    for (double x : {2850.0, 3200.0, 3550.0}) lianas.push_back(new FisicaPendular(x, 100, 400, 0.0, 0.6));
+    double suelo = Y_SUELO - 110;
+    bananas.push_back(new BananaMutante(450, suelo, 300, 1100));
+    bananas.push_back(new BananaMutante(1500, suelo, 1250, 1750));
+    bananas.push_back(new BananaMutante(2300, suelo, 2100, 2600));
+    bananas.push_back(new BananaMutante(4100, suelo, 3950, 4450));
+    bananas.push_back(new BananaMutante(5700, suelo, 5550, 5950));
+    bananas.push_back(new BananaMutante(7500, suelo, 7250, 8000));
+    bananas.push_back(new BananaMutante(8400, suelo, 8000, 9050));
+    bananas.push_back(new BananaMutante(8700, 250 - 110, 8600, 8950));
+    bananas.push_back(new BananaMutante(9400, suelo, 9100, 10250));
+    bananas.push_back(new BananaMutante(11900, suelo, 11600, 12300));
+    bananas.push_back(new BananaMutante(14200, suelo, 13600, 14800));
 
-    plataformas = {{1350, 500, 260, 22}, {1700, 380, 220, 22}, {2150, 480, 260, 22},
-                   {4300, 500, 300, 22}, {4750, 400, 250, 22}};
+    const double soldados[][2] = {{1780, 270},   {2200, 370},  {4400, suelo},  {4950, suelo},  {5300, suelo},
+                                  {7450, 360},   {7950, suelo}, {9010, 140},   {9950, suelo},  {11700, suelo},
+                                  {13650, suelo}, {14030, 260}, {14400, suelo}, {14650, suelo}};
+    for (const auto& s : soldados) bananas.push_back(new BananaMutante(s[0], s[1], s[0], s[0] + 70, true, 0, 750, 4));
+
+    for (double x : {2850.0, 3200.0, 3550.0, 6200.0, 6550.0, 6900.0, 10550.0, 10900.0, 11250.0, 12550.0, 12900.0,
+                     13250.0})
+        lianas.push_back(new FisicaPendular(x, 100, 400, 0.0, 0.6));
 }
 
 NivelPlantacion::~NivelPlantacion() {
@@ -90,15 +109,14 @@ void NivelPlantacion::resolverTerreno(double piesAntes) {
                 break;
             }
 
-    double cx = morty->getCentroX();
-    bool sobreAgua = cx > AGUA_INICIO && cx < AGUA_FIN;
-    if (!sobreAgua && morty->getY() + morty->getAlto() >= Y_SUELO) morty->aterrizar(Y_SUELO);
+    bool hueco = sobreHueco(morty->getCentroX());
+    if (!hueco && morty->getY() + morty->getAlto() >= Y_SUELO) morty->aterrizar(Y_SUELO);
 
-    if (morty->estaEnSuelo() && !sobreAgua)
-        for (double c : {100.0, 1200.0, 2450.0, 3950.0, 5400.0})
+    if (morty->estaEnSuelo() && !hueco)
+        for (double c : checkpoints)
             if (morty->getX() >= c && c > checkpointX) checkpointX = c;
 
-    if (sobreAgua && morty->getY() > Y_SUELO + 150) {
+    if (hueco && morty->getY() > Y_SUELO + 150) {
         morty->perderVida();
         morty->setPosicion(checkpointX, Y_SUELO - morty->getAlto());
         morty->setVelocidad(0, 0);
@@ -115,7 +133,8 @@ void NivelPlantacion::resolverTerreno(double piesAntes) {
 void NivelPlantacion::resolverLiberacion(double dt) {
     if (interactuar && !morty->getLiana() && morty->estaEnSuelo())
         for (size_t i = 0; i < xJaulas.size(); i++)
-            if (!jaulaLiberada(static_cast<int>(i)) && std::fabs(xJaulas[i] + 30 - morty->getCentroX()) < 70) {
+            if (!jaulaLiberada(static_cast<int>(i)) && std::fabs(xJaulas[i] + 30 - morty->getCentroX()) < 70 &&
+                std::fabs(morty->getY() + morty->getAlto() - yJaulas[i]) < 1) {
                 morty->setLiberando(true);
                 progresoJaulas[i] += dt;
                 if (jaulaLiberada(static_cast<int>(i))) {
@@ -186,6 +205,15 @@ void NivelPlantacion::procesarEntrada(int a, bool presionada) {
 
 const Morty& NivelPlantacion::getMorty() const { return *morty; }
 const std::vector<double>& NivelPlantacion::getXJaulas() const { return xJaulas; }
+const std::vector<double>& NivelPlantacion::getYJaulas() const { return yJaulas; }
+const std::vector<std::array<double, 2>>& NivelPlantacion::getHuecos() const { return huecos; }
+
+bool NivelPlantacion::sobreHueco(double x) const {
+    for (const auto& h : huecos)
+        if (x > h[0] && x < h[1]) return true;
+    return false;
+}
+
 const std::vector<double>& NivelPlantacion::getProgresoJaulas() const { return progresoJaulas; }
 bool NivelPlantacion::jaulaLiberada(int i) const { return progresoJaulas[i] >= TIEMPO_JAULA; }
 const std::vector<BananaMutante*>& NivelPlantacion::getBananas() const { return bananas; }

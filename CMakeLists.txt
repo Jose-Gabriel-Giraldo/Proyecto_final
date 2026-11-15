@@ -43,6 +43,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         nivel.h nivel.cpp
         nivelplantacion.h nivelplantacion.cpp
         niveljefe.h niveljefe.cpp
+        animacion.h animacion.cpp
+        vistaplantacion.h vistaplantacion.cpp
+        recursos/morty_liana.png
     )
 else()
     if(ANDROID)
@@ -55,6 +58,9 @@ else()
         )
     endif()
 endif()
+
+file(GLOB IMAGENES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} recursos/*.png)
+qt_add_resources(proyecto_final "recursos" PREFIX "/" BASE recursos FILES ${IMAGENES})
 
 target_link_libraries(proyecto_final PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 

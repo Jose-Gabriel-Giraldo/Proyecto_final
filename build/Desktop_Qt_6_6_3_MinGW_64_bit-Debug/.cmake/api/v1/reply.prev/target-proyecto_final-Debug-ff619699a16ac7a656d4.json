@@ -23,7 +23,15 @@
 			"include",
 			"find_package",
 			"find_dependency",
-			"_qt_internal_find_qt_dependencies"
+			"_qt_internal_find_qt_dependencies",
+			"target_sources",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"qt_add_resources",
+			"_qt_internal_expose_deferred_files_to_ide",
+			"qt6_finalize_target",
+			"qt_finalize_executable"
 		],
 		"files" : 
 		[
@@ -72,13 +80,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 73,
+				"line" : 78,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 59,
+				"line" : 64,
 				"parent" : 0
 			},
 			{
@@ -202,6 +210,60 @@
 				"file" : 10,
 				"line" : 61,
 				"parent" : 28
+			},
+			{
+				"command" : 15,
+				"file" : 1,
+				"line" : 62,
+				"parent" : 0
+			},
+			{
+				"command" : 14,
+				"file" : 0,
+				"line" : 389,
+				"parent" : 30
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 31
+			},
+			{
+				"command" : 12,
+				"file" : 0,
+				"line" : 2153,
+				"parent" : 32
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 1797,
+				"parent" : 33
+			},
+			{
+				"command" : 18,
+				"file" : 1,
+				"line" : 85,
+				"parent" : 0
+			},
+			{
+				"command" : 17,
+				"file" : 0,
+				"line" : 826,
+				"parent" : 35
+			},
+			{
+				"command" : 16,
+				"file" : 0,
+				"line" : 767,
+				"parent" : 36
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 1881,
+				"parent" : 37
 			}
 		]
 	},
@@ -321,18 +383,21 @@
 				36,
 				38,
 				40,
-				42
+				42,
+				44,
+				46,
+				47
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "proyecto_final_autogen::@6890427a1f51a3e7e1df"
+			"id" : "proyecto_final_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "proyecto_final_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "proyecto_final_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "proyecto_final::@6890427a1f51a3e7e1df",
@@ -447,7 +512,10 @@
 				36,
 				38,
 				40,
-				42
+				42,
+				44,
+				46,
+				47
 			]
 		},
 		{
@@ -475,7 +543,9 @@
 				37,
 				39,
 				41,
-				43
+				43,
+				45,
+				88
 			]
 		},
 		{
@@ -483,14 +553,61 @@
 			"sourceIndexes" : 
 			[
 				4,
-				44
+				48,
+				89
+			]
+		},
+		{
+			"name" : "Resources",
+			"sourceIndexes" : 
+			[
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				45
+				90,
+				91
 			]
 		}
 	],
@@ -734,6 +851,235 @@
 			"sourceGroupIndex" : 0
 		},
 		{
+			"backtrace" : 4,
+			"path" : "animacion.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "animacion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "vistaplantacion.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "vistaplantacion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 34,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/.rcc/qrc_recursos.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 38,
+			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/.rcc/recursos.qrc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/banana_atacar.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/banana_caminar.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/banana_danado.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/banana_idle.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/cielo.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/jaula_idle.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/jaula_liberar.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/montanas.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/morty_atacar.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/morty_caminar.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/morty_correr.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/morty_danado.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/morty_idle.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/nivel1.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/nivel2.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/palmera_ataques.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/palmera_golpe.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/palmera_idle.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/palmera_muerte.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/plataforma.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/platanal.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/proyectiles_banano.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/proyectiles_explosion.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/proyectiles_hojas.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/proyectiles_onda.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/proyectiles_racimo.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/rick_atacar.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/rick_caminar.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/rick_correr.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/rick_danado.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/rick_idle.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/soldado_disparar.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/soldado_idle.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/soldado_muerte.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/trabajador_agradecer.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/trabajador_caminar.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/trabajador_correr.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/trabajador_huir.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 38,
+			"path" : "recursos/trabajador_idle.png",
+			"sourceGroupIndex" : 3
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/include/ui_mainwindow.h",
@@ -748,8 +1094,14 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/.rcc/qrc_recursos.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/proyecto_final_autogen/timestamp.rule",
-			"sourceGroupIndex" : 3
+			"sourceGroupIndex" : 4
 		}
 	],
 	"type" : "EXECUTABLE"

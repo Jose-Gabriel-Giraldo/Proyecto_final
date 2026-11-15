@@ -17,7 +17,7 @@ public:
     static const double AGUA_INICIO;
     static const double AGUA_FIN;
     static const double X_ESTACION;
-    static const int MINIMO_LIBERADOS = 3;
+    static const int MINIMO_LIBERADOS = 6;
     static const double TIEMPO_JAULA;
 
     NivelPlantacion();
@@ -28,6 +28,8 @@ public:
 
     const Morty& getMorty() const;
     const std::vector<double>& getXJaulas() const;
+    const std::vector<double>& getYJaulas() const;
+    const std::vector<std::array<double, 2>>& getHuecos() const;
     const std::vector<double>& getProgresoJaulas() const;
     bool jaulaLiberada(int i) const;
     const std::vector<BananaMutante*>& getBananas() const;
@@ -39,9 +41,11 @@ private:
     void resolverTerreno(double piesAntes);
     void resolverLiberacion(double dt);
     void resolverCombate();
+    bool sobreHueco(double x) const;
 
     Morty* morty;
-    std::vector<double> xJaulas, progresoJaulas;
+    std::vector<double> xJaulas, yJaulas, progresoJaulas, checkpoints;
+    std::vector<std::array<double, 2>> huecos;
     std::vector<BananaMutante*> bananas;
     std::vector<FisicaPendular*> lianas;
     std::vector<std::array<double, 4>> plataformas;

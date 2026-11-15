@@ -46,7 +46,7 @@ private:
     bool disparando;
 
     QPixmap cielo, montanas, platanal, fondo, plataforma;
-    Animacion mIdle, mCaminar, mCorrer, mAtacar, mDanado;
+    Animacion mIdle, mCaminar, mCorrer, mAtacar, mDanado, mLiana;
     Animacion bCaminar, bAtacar, sIdle, sDisparar;
     std::vector<Animacion> animJaulas, muertes;
     std::vector<int> faseJaulas, vidaPrevia;

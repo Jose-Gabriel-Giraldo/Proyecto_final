@@ -1197,6 +1197,10 @@
 			"path" : "C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginAdditionalTargetInfo.cmake"
 		},
 		{
+			"isExternal" : true,
+			"path" : "C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in"
+		},
+		{
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake"

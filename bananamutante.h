@@ -5,8 +5,8 @@
 
 class BananaMutante : public Personaje {
 public:
-    BananaMutante(double x, double y, double xMin, double xMax, bool armado = false, double velocidad = 90.0,
-                  double radio = 250.0, int vida = 2);
+    BananaMutante(double x, double y, double xMin, double xMax, bool armado = false, double velocidad = 120.0,
+                  double radio = 300.0, int vida = 3);
 
     void comportarse(const Personaje& objetivo, double dt) override;
     void actualizar(double dt) override;
@@ -15,7 +15,7 @@ public:
     bool estaAlerta() const;
 
 private:
-    double xMin, xMax, velocidad, radio, cadencia, recarga;
+    double xMin, xMax, velocidad, radio, cadencia, recarga, objetivoX, objetivoY;
     bool armado, alerta;
 };
 

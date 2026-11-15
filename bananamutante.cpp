@@ -4,8 +4,8 @@
 
 BananaMutante::BananaMutante(double x, double y, double xMin, double xMax, bool armado, double velocidad, double radio,
                              int vida)
-    : Personaje(x, y, 70, 110, vida), xMin(xMin), xMax(xMax), velocidad(velocidad), radio(radio), cadencia(1.8),
-    recarga(1.8), armado(armado), alerta(false) {
+    : Personaje(x, y, 70, 110, vida), xMin(xMin), xMax(xMax), velocidad(velocidad), radio(radio), cadencia(1.2),
+    recarga(1.2), objetivoX(0), objetivoY(0), armado(armado), alerta(false) {
     duracionInvulnerable = 0;
     direccion = -1;
     if (!armado) vx = -velocidad;
@@ -16,8 +16,10 @@ void BananaMutante::comportarse(const Personaje& objetivo, double) {
     double dy = objetivo.getCentroY() - getCentroY();
 
     if (armado) {
-        alerta = std::fabs(dx) <= radio && std::fabs(dy) < 120;
+        alerta = std::hypot(dx, dy) <= radio;
         if (alerta) direccion = dx >= 0 ? 1 : -1;
+        objetivoX = objetivo.getCentroX();
+        objetivoY = objetivo.getCentroY();
         return;
     }
 
@@ -44,7 +46,11 @@ Proyectil* BananaMutante::disparar() {
     if (!armado || !alerta || recarga > 0) return nullptr;
     recarga = cadencia;
     double px = direccion > 0 ? x + ancho : x - 12;
-    return new Proyectil(px, y + 50, direccion * 450.0, 0, 12, 6, 1, false, PROYECTIL_BALA_SOLDADO, nullptr, -1, 2.0);
+    double dx = objetivoX - px, dy = objetivoY - (y + 50);
+    double d = std::hypot(dx, dy);
+    if (d < 1) d = 1;
+    return new Proyectil(px, y + 50, 550.0 * dx / d, 550.0 * dy / d, 12, 6, 1, false, PROYECTIL_BALA_SOLDADO, nullptr, -1,
+                         2.5);
 }
 
 bool BananaMutante::esArmado() const { return armado; }

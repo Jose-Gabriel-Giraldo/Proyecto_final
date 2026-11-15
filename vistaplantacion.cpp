@@ -5,23 +5,33 @@
 #include "nivelplantacion.h"
 #include "proyectil.h"
 #include <QKeyEvent>
+#include <QLinearGradient>
 #include <QPainter>
 #include <algorithm>
 #include <cmath>
 #include <cstdlib>
+#include <stdexcept>
 
 const double ESC_MORTY = 0.56;
 const double ESC_BANANA = 0.62;
 const double ESC_SOLDADO = 0.6;
 const double ESC_JAULA = 0.62;
+const double DISTANCIA_HUIDA = 180;
+
+// Tramos del mundo armados con nivel1.png: {x destino, x origen, ancho}
+const double PIEZAS[][3] = {{0, 0, 5580},        {5580, 1400, 292},  {5872, 2522, 1478},  {7350, 1400, 950},
+                            {8300, 1400, 950},   {9250, 1400, 950},  {10200, 1400, 22},   {10222, 2522, 1478},
+                            {11700, 1400, 522},  {12222, 2522, 1478}, {13700, 1400, 950}, {14650, 1400, 250},
+                            {14900, 5580, 820}};
 
 VistaPlantacion::VistaPlantacion(QWidget* parent)
     : QWidget(parent), nivel(nullptr), camX(0), temblor(0), tiempo(0), disparando(false), cielo(":/cielo.png"),
     montanas(":/montanas.png"), platanal(":/platanal.png"), fondo(":/nivel1.png"), plataforma(":/plataforma.png"),
     mIdle(":/morty_idle.png", 1, 1), mCaminar(":/morty_caminar.png", 3, 8), mCorrer(":/morty_correr.png", 3, 12),
-    mAtacar(":/morty_atacar.png", 1, 1), mDanado(":/morty_danado.png", 1, 1),
+    mAtacar(":/morty_atacar.png", 1, 1), mDanado(":/morty_danado.png", 1, 1), mLiana(":/morty_liana.png", 2, 3),
     bCaminar(":/banana_caminar.png", 3, 6), bAtacar(":/banana_atacar.png", 3, 10),
     sIdle(":/soldado_idle.png", 4, 6), sDisparar(":/soldado_disparar.png", 5, 12) {
+    if (fondo.width() != 6400) throw std::runtime_error("nivel1.png debe ser la imagen original de 6400x720");
     setMinimumSize(640, 360);
     setFocusPolicy(Qt::StrongFocus);
     connect(&timer, &QTimer::timeout, this, &VistaPlantacion::paso);
@@ -83,7 +93,7 @@ void VistaPlantacion::paso() {
 }
 
 void VistaPlantacion::actualizarAnimaciones(double dt) {
-    for (Animacion* a : {&mIdle, &mCaminar, &mCorrer, &mAtacar, &mDanado, &bCaminar, &bAtacar, &sIdle, &sDisparar})
+    for (Animacion* a : {&mIdle, &mCaminar, &mCorrer, &mAtacar, &mDanado, &mLiana, &bCaminar, &bAtacar, &sIdle, &sDisparar})
         a->actualizar(dt);
 
     for (int i = 0; i < static_cast<int>(faseJaulas.size()); i++) {
@@ -98,7 +108,7 @@ void VistaPlantacion::actualizarAnimaciones(double dt) {
             animJaulas[i] = Animacion(":/trabajador_huir.png", 4, 8);
         } else if (faseJaulas[i] == 3) {
             xTrabajadores[i] += 220 * dt;
-            if (xTrabajadores[i] - camX > 1400 || xTrabajadores[i] > nivel->getXJaulas()[i] + 1200) faseJaulas[i] = 4;
+            if (xTrabajadores[i] > nivel->getXJaulas()[i] + 30 + DISTANCIA_HUIDA) faseJaulas[i] = 4;
         }
         animJaulas[i].actualizar(dt);
     }
@@ -140,7 +150,26 @@ void VistaPlantacion::dibujarFondo(QPainter& p) {
 }
 
 void VistaPlantacion::dibujarEscenario(QPainter& p) {
-    p.drawPixmap(QRectF(0, 0, 1280, 720), fondo, QRectF(camX, 0, 1280, 720));
+    for (const auto& pz : PIEZAS)
+        if (pz[0] + pz[2] > camX && pz[0] < camX + 1280)
+            p.drawPixmap(QRectF(pz[0] - camX, 0, pz[2], 720), fondo, QRectF(pz[1], 0, pz[2], 720));
+
+    QLinearGradient tierra(0, 640, 0, 720);
+    tierra.setColorAt(0, QColor(70, 46, 32));
+    tierra.setColorAt(1, QColor(24, 16, 14));
+    const std::vector<std::array<double, 2>>& huecos = nivel->getHuecos();
+    for (int i = 1; i < static_cast<int>(huecos.size()); i++) {
+        double x0 = huecos[i][0] + 24 - camX, ancho = huecos[i][1] - huecos[i][0] - 48;
+        if (x0 + ancho < 0 || x0 > 1280) continue;
+        p.fillRect(QRectF(x0, 641, ancho, 79), tierra);
+        p.setPen(QPen(QColor(30, 24, 18), 2));
+        p.setBrush(QColor(150, 120, 80));
+        for (int k = 0; k * 20 < ancho - 12; k++) {
+            double sx = x0 + k * 20 + 4, alto = 24 + (k * 37) % 20;
+            QPointF punta[3] = {QPointF(sx, 720), QPointF(sx + 6, 720 - alto), QPointF(sx + 12, 720)};
+            p.drawPolygon(punta, 3);
+        }
+    }
 
     for (const std::array<double, 4>& pl : nivel->getPlataformas())
         p.drawTiledPixmap(QRectF(pl[0] - camX, pl[1], pl[2], pl[3]), plataforma);
@@ -166,18 +195,21 @@ void VistaPlantacion::dibujarEscenario(QPainter& p) {
 
 void VistaPlantacion::dibujarJaulas(QPainter& p) {
     const std::vector<double>& xs = nivel->getXJaulas();
+    const std::vector<double>& ys = nivel->getYJaulas();
     const std::vector<double>& prog = nivel->getProgresoJaulas();
     const Morty& m = nivel->getMorty();
-    double ySuelo = NivelPlantacion::Y_SUELO;
 
     for (int i = 0; i < static_cast<int>(xs.size()); i++) {
         if (faseJaulas[i] == 4) continue;
         double cx = (faseJaulas[i] >= 2 ? xTrabajadores[i] : xs[i] + 30) - camX;
         if (cx < -200 || cx > 1480) continue;
 
+        double ySuelo = ys[i];
         bool abriendo = faseJaulas[i] == 0 && prog[i] > 0;
         double sacudida = abriendo ? std::sin(tiempo * 60) * 2 : 0;
+        if (faseJaulas[i] == 3) p.setOpacity(1 - (xTrabajadores[i] - xs[i] - 30) / DISTANCIA_HUIDA);
         animJaulas[i].dibujar(p, cx + sacudida, ySuelo, animJaulas[i].getAltoCuadro() * ESC_JAULA);
+        p.setOpacity(1);
 
         if (abriendo) {
             QRectF barra(cx - 40, ySuelo - 175, 80, 8);
@@ -186,7 +218,8 @@ void VistaPlantacion::dibujarJaulas(QPainter& p) {
             p.drawRect(barra);
             p.setBrush(QColor(110, 220, 90));
             p.drawRect(QRectF(barra.x(), barra.y(), 80 * prog[i] / NivelPlantacion::TIEMPO_JAULA, 8));
-        } else if (faseJaulas[i] == 0 && std::fabs(xs[i] + 30 - m.getCentroX()) < 70) {
+        } else if (faseJaulas[i] == 0 && std::fabs(xs[i] + 30 - m.getCentroX()) < 70 &&
+                   std::fabs(m.getY() + m.getAlto() - ySuelo) < 1) {
             p.setPen(Qt::white);
             p.drawText(QRectF(cx - 100, ySuelo - 190, 200, 20), Qt::AlignCenter, "Mantén E para liberar");
         }
@@ -235,9 +268,20 @@ void VistaPlantacion::dibujarMorty(QPainter& p) {
         p.drawEllipse(QPointF(cx, base - 50), 45, 62);
     }
 
+    if (m.getLiana()) {
+        const FisicaPendular* l = m.getLiana();
+        double alto = mLiana.getAltoCuadro() * ESC_MORTY;
+        p.save();
+        p.translate(l->getPuntoX() - camX, l->getPuntoY());
+        p.rotate(-l->getTheta() * 180 / PI);
+        mLiana.dibujar(p, 0, alto - 12 * ESC_MORTY, alto, m.getDireccion() < 0);
+        p.restore();
+        return;
+    }
+
     const Animacion* a = &mIdle;
     if (m.esInvulnerable()) a = &mDanado;
-    else if (m.getLiana() || m.estaLiberando()) a = &mIdle;
+    else if (m.estaLiberando()) a = &mIdle;
     else if (disparando) a = &mAtacar;
     else if (!m.estaEnSuelo() || std::fabs(m.getVx()) > 300) a = &mCorrer;
     else if (std::fabs(m.getVx()) > 1) a = &mCaminar;
@@ -275,7 +319,9 @@ void VistaPlantacion::dibujarHud(QPainter& p) {
     p.setPen(Qt::white);
     int seg = static_cast<int>(nivel->getTiempo());
     p.drawText(QPointF(170, 38), QString("Puntos: %1").arg(nivel->getPuntaje()));
-    p.drawText(QPointF(24, 66), QString("Trabajadores: %1/5 (mín. 3)").arg(m.getLiberados()));
+    int total = static_cast<int>(nivel->getXJaulas().size());
+    p.drawText(QPointF(24, 66), QString("Trabajadores: %1/%2 (mín. %3)")
+                                    .arg(m.getLiberados()).arg(total).arg(NivelPlantacion::MINIMO_LIBERADOS));
     p.drawText(QPointF(330, 38), QString("%1:%2").arg(seg / 60).arg(seg % 60, 2, 10, QChar('0')));
 
     p.drawText(QPointF(24, 96), "Valor");
@@ -292,7 +338,8 @@ void VistaPlantacion::dibujarHud(QPainter& p) {
     if (nivel->faltanTrabajadores()) {
         p.setPen(QColor(255, 230, 120));
         p.setFont(QFont("Courier New", 16, QFont::Bold));
-        p.drawText(QRectF(0, 140, 1280, 30), Qt::AlignCenter, "¡Debes liberar al menos 3 trabajadores!");
+        p.drawText(QRectF(0, 140, 1280, 30), Qt::AlignCenter,
+                   QString("¡Debes liberar al menos %1 trabajadores!").arg(NivelPlantacion::MINIMO_LIBERADOS));
     }
 
     if (nivel->getEstado() == NIVEL_EN_CURSO) return;

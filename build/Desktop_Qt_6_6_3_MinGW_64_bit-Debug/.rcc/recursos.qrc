@@ -1,0 +1,45 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="banana_atacar.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/banana_atacar.png</file>
+    <file alias="banana_caminar.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/banana_caminar.png</file>
+    <file alias="banana_danado.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/banana_danado.png</file>
+    <file alias="banana_idle.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/banana_idle.png</file>
+    <file alias="cielo.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/cielo.png</file>
+    <file alias="jaula_idle.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/jaula_idle.png</file>
+    <file alias="jaula_liberar.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/jaula_liberar.png</file>
+    <file alias="montanas.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/montanas.png</file>
+    <file alias="morty_atacar.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/morty_atacar.png</file>
+    <file alias="morty_caminar.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/morty_caminar.png</file>
+    <file alias="morty_correr.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/morty_correr.png</file>
+    <file alias="morty_danado.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/morty_danado.png</file>
+    <file alias="morty_idle.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/morty_idle.png</file>
+    <file alias="morty_liana.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/morty_liana.png</file>
+    <file alias="nivel1.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/nivel1.png</file>
+    <file alias="nivel2.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/nivel2.png</file>
+    <file alias="palmera_ataques.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/palmera_ataques.png</file>
+    <file alias="palmera_golpe.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/palmera_golpe.png</file>
+    <file alias="palmera_idle.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/palmera_idle.png</file>
+    <file alias="palmera_muerte.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/palmera_muerte.png</file>
+    <file alias="plataforma.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/plataforma.png</file>
+    <file alias="platanal.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/platanal.png</file>
+    <file alias="proyectiles_banano.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/proyectiles_banano.png</file>
+    <file alias="proyectiles_explosion.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/proyectiles_explosion.png</file>
+    <file alias="proyectiles_hojas.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/proyectiles_hojas.png</file>
+    <file alias="proyectiles_onda.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/proyectiles_onda.png</file>
+    <file alias="proyectiles_racimo.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/proyectiles_racimo.png</file>
+    <file alias="rick_atacar.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/rick_atacar.png</file>
+    <file alias="rick_caminar.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/rick_caminar.png</file>
+    <file alias="rick_correr.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/rick_correr.png</file>
+    <file alias="rick_danado.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/rick_danado.png</file>
+    <file alias="rick_idle.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/rick_idle.png</file>
+    <file alias="soldado_disparar.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/soldado_disparar.png</file>
+    <file alias="soldado_idle.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/soldado_idle.png</file>
+    <file alias="soldado_muerte.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/soldado_muerte.png</file>
+    <file alias="trabajador_agradecer.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/trabajador_agradecer.png</file>
+    <file alias="trabajador_caminar.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/trabajador_caminar.png</file>
+    <file alias="trabajador_correr.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/trabajador_correr.png</file>
+    <file alias="trabajador_huir.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/trabajador_huir.png</file>
+    <file alias="trabajador_idle.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/trabajador_idle.png</file>
+  </qresource>
+</RCC>
+
