@@ -17,6 +17,8 @@ void Animacion::actualizar(double dt) {
 
 void Animacion::reiniciar() { tiempo = 0; }
 
+void Animacion::setCuadro(int c) { tiempo = (c + 0.5) / fps; }
+
 bool Animacion::terminada() const { return !repetir && tiempo * fps >= cuadros; }
 
 int Animacion::getCuadroActual() const {

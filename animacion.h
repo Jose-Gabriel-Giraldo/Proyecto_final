@@ -12,6 +12,7 @@ public:
 
     void actualizar(double dt);
     void reiniciar();
+    void setCuadro(int c);
     bool terminada() const;
     void dibujar(QPainter& p, double centroX, double base, double alto, bool espejo = false) const;
 

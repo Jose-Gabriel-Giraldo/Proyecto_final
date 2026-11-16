@@ -16,6 +16,7 @@ const double ESC_MORTY = 0.56;
 const double ESC_BANANA = 0.62;
 const double ESC_SOLDADO = 0.6;
 const double ESC_JAULA = 0.62;
+const double ANCLA_LIANA = 25;
 const double DISTANCIA_HUIDA = 180;
 
 // Tramos del mundo armados con nivel1.png: {x destino, x origen, ancho}
@@ -25,10 +26,11 @@ const double PIEZAS[][3] = {{0, 0, 5580},        {5580, 1400, 292},  {5872, 2522
                             {14900, 5580, 820}};
 
 VistaPlantacion::VistaPlantacion(QWidget* parent)
-    : QWidget(parent), nivel(nullptr), camX(0), temblor(0), tiempo(0), disparando(false), cielo(":/cielo.png"),
+    : QWidget(parent), nivel(nullptr), camX(0), temblor(0), tiempo(0), tiempoLiana(0), tiempoAterrizaje(0),
+    disparando(false), cayendoDeLiana(false), cielo(":/cielo.png"),
     montanas(":/montanas.png"), platanal(":/platanal.png"), fondo(":/nivel1.png"), plataforma(":/plataforma.png"),
     mIdle(":/morty_idle.png", 1, 1), mCaminar(":/morty_caminar.png", 3, 8), mCorrer(":/morty_correr.png", 3, 12),
-    mAtacar(":/morty_atacar.png", 1, 1), mDanado(":/morty_danado.png", 1, 1), mLiana(":/morty_liana.png", 2, 3),
+    mAtacar(":/morty_atacar.png", 1, 1), mDanado(":/morty_danado.png", 1, 1), mLiana(":/morty_liana.png", 10, 1), mSoltar(":/morty_soltar.png", 3, 1),
     bCaminar(":/banana_caminar.png", 3, 6), bAtacar(":/banana_atacar.png", 3, 10),
     sIdle(":/soldado_idle.png", 4, 6), sDisparar(":/soldado_disparar.png", 5, 12) {
     if (fondo.width() != 6400) throw std::runtime_error("nivel1.png debe ser la imagen original de 6400x720");
@@ -55,6 +57,9 @@ void VistaPlantacion::reiniciar() {
     temblor = 0;
     tiempo = 0;
     disparando = false;
+    tiempoLiana = 0;
+    tiempoAterrizaje = 0;
+    cayendoDeLiana = false;
 
     const std::vector<double>& xs = nivel->getXJaulas();
     animJaulas.assign(xs.size(), Animacion(":/jaula_idle.png", 4, 4));
@@ -93,7 +98,20 @@ void VistaPlantacion::paso() {
 }
 
 void VistaPlantacion::actualizarAnimaciones(double dt) {
-    for (Animacion* a : {&mIdle, &mCaminar, &mCorrer, &mAtacar, &mDanado, &mLiana, &bCaminar, &bAtacar, &sIdle, &sDisparar})
+    const Morty& m = nivel->getMorty();
+    if (m.getLiana()) {
+        tiempoLiana += dt;
+        cayendoDeLiana = true;
+    } else {
+        tiempoLiana = 0;
+        if (cayendoDeLiana && m.estaEnSuelo()) {
+            cayendoDeLiana = false;
+            tiempoAterrizaje = 0.2;
+        }
+    }
+    if (tiempoAterrizaje > 0) tiempoAterrizaje -= dt;
+
+    for (Animacion* a : {&mIdle, &mCaminar, &mCorrer, &mAtacar, &mDanado, &bCaminar, &bAtacar, &sIdle, &sDisparar})
         a->actualizar(dt);
 
     for (int i = 0; i < static_cast<int>(faseJaulas.size()); i++) {
@@ -268,14 +286,25 @@ void VistaPlantacion::dibujarMorty(QPainter& p) {
         p.drawEllipse(QPointF(cx, base - 50), 45, 62);
     }
 
+    bool espejo = m.getDireccion() < 0;
     if (m.getLiana()) {
         const FisicaPendular* l = m.getLiana();
-        double alto = mLiana.getAltoCuadro() * ESC_MORTY;
-        p.save();
-        p.translate(l->getPuntoX() - camX, l->getPuntoY());
-        p.rotate(-l->getTheta() * 180 / PI);
-        mLiana.dibujar(p, 0, alto - 12 * ESC_MORTY, alto, m.getDireccion() < 0);
-        p.restore();
+        double th = std::fabs(l->getTheta());
+        int c;
+        if (tiempoLiana < 0.25) c = 0;
+        else if (th < 0.1 && std::fabs(l->getOmega()) < 0.3) c = 1 + static_cast<int>(tiempo * 3) % 2;
+        else {
+            espejo = l->getOmega() < 0;
+            c = th < 0.15 ? 9 : th < 0.3 ? 3 : th < 0.45 ? 4 : 5;
+        }
+        mLiana.setCuadro(c);
+        double base = l->getPuntoY() + (mLiana.getAltoCuadro() - ANCLA_LIANA) * ESC_MORTY;
+        mLiana.dibujar(p, l->getPuntoX() - camX, base, mLiana.getAltoCuadro() * ESC_MORTY, espejo);
+        return;
+    }
+    if (cayendoDeLiana || tiempoAterrizaje > 0) {
+        mSoltar.setCuadro(tiempoAterrizaje > 0 ? 2 : m.getVy() < 0 ? 0 : 1);
+        mSoltar.dibujar(p, cx, base, mSoltar.getAltoCuadro() * ESC_MORTY, espejo);
         return;
     }
 
@@ -285,7 +314,7 @@ void VistaPlantacion::dibujarMorty(QPainter& p) {
     else if (disparando) a = &mAtacar;
     else if (!m.estaEnSuelo() || std::fabs(m.getVx()) > 300) a = &mCorrer;
     else if (std::fabs(m.getVx()) > 1) a = &mCaminar;
-    a->dibujar(p, cx, base, a->getAltoCuadro() * ESC_MORTY, m.getDireccion() < 0);
+    a->dibujar(p, cx, base, a->getAltoCuadro() * ESC_MORTY, espejo);
 }
 
 void VistaPlantacion::dibujarProyectiles(QPainter& p) {

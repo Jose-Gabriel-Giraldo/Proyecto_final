@@ -80,13 +80,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 78,
+				"line" : 80,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 64,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
@@ -214,7 +214,7 @@
 			{
 				"command" : 15,
 				"file" : 1,
-				"line" : 62,
+				"line" : 64,
 				"parent" : 0
 			},
 			{
@@ -244,7 +244,7 @@
 			{
 				"command" : 18,
 				"file" : 1,
-				"line" : 85,
+				"line" : 87,
 				"parent" : 0
 			},
 			{
@@ -386,7 +386,7 @@
 				42,
 				44,
 				46,
-				47
+				49
 			]
 		}
 	],
@@ -515,7 +515,7 @@
 				42,
 				44,
 				46,
-				47
+				49
 			]
 		},
 		{
@@ -545,7 +545,7 @@
 				41,
 				43,
 				45,
-				88
+				90
 			]
 		},
 		{
@@ -553,16 +553,16 @@
 			"sourceIndexes" : 
 			[
 				4,
-				48,
-				89
+				50,
+				91
 			]
 		},
 		{
 			"name" : "Resources",
 			"sourceIndexes" : 
 			[
-				49,
-				50,
+				47,
+				48,
 				51,
 				52,
 				53,
@@ -599,15 +599,17 @@
 				84,
 				85,
 				86,
-				87
+				87,
+				88,
+				89
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				90,
-				91
+				92,
+				93
 			]
 		}
 	],
@@ -871,6 +873,16 @@
 			"compileGroupIndex" : 0,
 			"path" : "vistaplantacion.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "recursos/morty_liana.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"path" : "recursos/morty_soltar.png",
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 34,

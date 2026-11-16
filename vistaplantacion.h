@@ -43,10 +43,11 @@ private:
     QTimer timer;
     QElapsedTimer reloj;
     double camX, temblor, tiempo;
-    bool disparando;
+    double tiempoLiana, tiempoAterrizaje;
+    bool disparando, cayendoDeLiana;
 
     QPixmap cielo, montanas, platanal, fondo, plataforma;
-    Animacion mIdle, mCaminar, mCorrer, mAtacar, mDanado, mLiana;
+    Animacion mIdle, mCaminar, mCorrer, mAtacar, mDanado, mLiana, mSoltar;
     Animacion bCaminar, bAtacar, sIdle, sDisparar;
     std::vector<Animacion> animJaulas, muertes;
     std::vector<int> faseJaulas, vidaPrevia;

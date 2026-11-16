@@ -46,6 +46,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         animacion.h animacion.cpp
         vistaplantacion.h vistaplantacion.cpp
         recursos/morty_liana.png
+        recursos/morty_soltar.png
     )
 else()
     if(ANDROID)
