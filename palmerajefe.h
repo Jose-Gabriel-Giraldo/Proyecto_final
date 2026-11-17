@@ -43,6 +43,8 @@ private:
     ModuloAccion* accion;
     bool pendiente;
     long long tiempoPendiente;
+    int dirMovimiento;
+    double xMin, xMax;
 };
 
 #endif

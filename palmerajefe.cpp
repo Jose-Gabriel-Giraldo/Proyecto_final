@@ -8,7 +8,8 @@
 PalmeraJefe::PalmeraJefe(double x, double y, const Rick& rick, const ConfiguracionDificultad& config, unsigned semilla)
     : Personaje(x, y, 260, 440, 5000), fase(1), config(&config), aprendizaje(new ModuloAprendizaje()),
     percepcion(new ModuloPercepcion(rick)), razonamiento(new ModuloRazonamiento(*percepcion, *aprendizaje, semilla)),
-    accion(new ModuloAccion(*razonamiento, *aprendizaje, semilla + 1)), pendiente(false), tiempoPendiente(0) {
+    accion(new ModuloAccion(*razonamiento, *aprendizaje, semilla + 1)), pendiente(false), tiempoPendiente(0),
+    dirMovimiento(-1), xMin(x - 220), xMax(x) {
     duracionInvulnerable = 0;
 }
 
@@ -22,6 +23,10 @@ PalmeraJefe::~PalmeraJefe() {
 void PalmeraJefe::actualizar(double dt) {
     actualizarInvulnerabilidad(dt);
     percepcion->observarFrame(dt);
+    if (pendiente) return;
+    x += dirMovimiento * (fase == 1 ? 60.0 : 100.0) * dt;
+    if (x <= xMin) { x = xMin; dirMovimiento = 1; }
+    if (x >= xMax) { x = xMax; dirMovimiento = -1; }
 }
 
 Proyectil* PalmeraJefe::disparar() { return nullptr; }

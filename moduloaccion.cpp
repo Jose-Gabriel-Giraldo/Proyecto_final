@@ -20,15 +20,19 @@ int ModuloAccion::ejecutar(double xBoca, double yBoca, double ySuelo, int mutant
     double objetivo = razonamiento->getObjetivoX();
 
     if (ataque == ATAQUE_BANANOS) {
-        double v0 = 900, distancia = xBoca - objetivo;
+        double v0 = 700, distancia = xBoca - objetivo;
         if (distancia < 100) distancia = 100;
-        double c = v0 / distancia;
-        if (c < 1.2) c = 1.2;
-        if (c > 2.0) c = 2.0;
-        for (double grados : {0.0, -12.0}) {
-            double a = grados * PI / 180;
-            proyectiles.push_back(new Proyectil(xBoca, ySuelo - 70, -v0 * std::cos(a), v0 * std::sin(a), 40, 20, 1,
-                                                false, PROYECTIL_BANANO, new FisicaArrastre(c), id, 3.0));
+        double c = v0 / (distancia * 1.6);
+        if (c < 0.3) c = 0.3;
+        if (c > 1.0) c = 1.0;
+        const double alturas[3] = {ySuelo - 70, ySuelo - 230, ySuelo - 350};
+        int libre = std::uniform_int_distribution<int>(0, 2)(generador);
+        double atras = 0;
+        for (int i = 0; i < 3; i++) {
+            if (i == libre) continue;
+            proyectiles.push_back(new Proyectil(xBoca + atras, alturas[i], -v0, 0, 40, 20, 1, false, PROYECTIL_BANANO,
+                                                new FisicaArrastre(c), id, 5.0));
+            atras += 260;
         }
     } else if (ataque == ATAQUE_RACIMOS) {
         double T = config.getTiempoVueloRacimo(), g = 1400, vx, vy;

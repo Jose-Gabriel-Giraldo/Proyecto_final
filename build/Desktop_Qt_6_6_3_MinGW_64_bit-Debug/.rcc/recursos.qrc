@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="/">
+    <file alias="MapaRitmo.txt">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt</file>
     <file alias="banana_atacar.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/banana_atacar.png</file>
     <file alias="banana_caminar.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/banana_caminar.png</file>
     <file alias="banana_danado.png">C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/banana_danado.png</file>

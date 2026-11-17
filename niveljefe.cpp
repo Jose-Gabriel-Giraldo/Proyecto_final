@@ -17,6 +17,7 @@ NivelJefe::NivelJefe(const ConfiguracionDificultad& config, unsigned semilla)
     proximoContratiempo(-1), duracionMs(0), contadorBeats(0), idAtaqueMutantes(-1), intensidadActual(0), izquierda(false),
     derecha(false), disparando(false), generador(semilla + 2) {
     rick->aterrizar(Y_SUELO);
+    plataformas = {{160, 480, 160, 22}, {330, 360, 200, 22}, {590, 480, 150, 22}};
 }
 
 NivelJefe::~NivelJefe() {
@@ -67,14 +68,25 @@ void NivelJefe::actualizar(double dt) {
         Proyectil* p = rick->disparar();
         if (p) { agregarProyectil(p); eventos.push(EVENTO_DISPARO); }
     }
+    double piesAntes = rick->getY() + rick->getAlto();
     rick->actualizar(dt);
+    double pies = rick->getY() + rick->getAlto();
+    if (rick->getVy() >= 0)
+        for (const auto& p : plataformas)
+            if (piesAntes <= p[1] + 0.5 && pies >= p[1] && rick->getX() + rick->getAncho() > p[0] &&
+                rick->getX() < p[0] + p[2]) {
+                rick->aterrizar(p[1]);
+                break;
+            }
     if (rick->getY() + rick->getAlto() >= Y_SUELO) rick->aterrizar(Y_SUELO);
 
     palmera->actualizar(dt);
     procesarRitmo();
 
-    for (BananaMutante* m : mutantes)
-        if (m->estaActiva()) { m->comportarse(*rick, dt); m->actualizar(dt); }
+    for (BananaMutante* m : mutantes) {
+        m->comportarse(*rick, dt);
+        m->actualizar(dt);
+    }
 
     actualizarProyectiles(dt);
     resolverColisiones();
@@ -98,14 +110,14 @@ void NivelJefe::procesarRitmo() {
         if (intensidadActual == 0) continue;
         int cada = (palmera->getFase() == 1 ? 16 : 8) >> intensidadActual;
         if (contadorBeats % cada == 0 && !palmera->tieneAtaquePendiente())
-            palmera->preparar(b, false, mutantesVivos());
+            palmera->preparar(b, false, static_cast<int>(mutantes.size()));
     }
     if (palmera->tieneAtaquePendiente() && posCancionMs >= palmera->getTiempoPendiente()) lanzarAtaque(true);
 
     if (proximoContratiempo >= 0 && posCancionMs >= proximoContratiempo) {
         proximoContratiempo = -1;
         if (!palmera->tieneAtaquePendiente()) {
-            palmera->preparar(static_cast<long long>(posCancionMs), true, mutantesVivos());
+            palmera->preparar(static_cast<long long>(posCancionMs), true, static_cast<int>(mutantes.size()));
             lanzarAtaque(false);
         }
     }
@@ -114,7 +126,7 @@ void NivelJefe::procesarRitmo() {
 void NivelJefe::lanzarAtaque(bool programarContratiempo) {
     std::vector<Proyectil*> nuevos;
     std::vector<BananaMutante*> invocados;
-    int id = palmera->lanzar(mutantesVivos(), nuevos, invocados);
+    int id = palmera->lanzar(static_cast<int>(mutantes.size()), nuevos, invocados);
     if (id < 0) return;
 
     for (Proyectil* p : nuevos) agregarProyectil(p);
@@ -184,18 +196,23 @@ void NivelJefe::resolverColisiones() {
                 idAtaqueMutantes = -1;
             }
         }
-    if (idAtaqueMutantes >= 0 && mutantesVivos() == 0) {
+
+    int i = 0;
+    while (i < static_cast<int>(mutantes.size())) {
+        if (mutantes[i]->estaActiva()) {
+            i++;
+            continue;
+        }
+        delete mutantes[i];
+        mutantes[i] = mutantes.back();
+        mutantes.pop_back();
+    }
+
+    if (idAtaqueMutantes >= 0 && mutantes.empty()) {
         palmera->notificarResultado(idAtaqueMutantes, false);
         idAtaqueMutantes = -1;
     }
     if (rick->getVida() < vidaAntes) eventos.push(EVENTO_DANIO_JUGADOR);
-}
-
-int NivelJefe::mutantesVivos() const {
-    int n = 0;
-    for (BananaMutante* m : mutantes)
-        if (m->estaActiva()) n++;
-    return n;
 }
 
 void NivelJefe::alEliminarProyectil(const Proyectil& p) {
@@ -230,4 +247,5 @@ const ConfiguracionDificultad& NivelJefe::getConfiguracion() const { return conf
 double NivelJefe::getPosicionCancionMs() const { return posCancionMs; }
 long long NivelJefe::getDuracionMs() const { return duracionMs; }
 double NivelJefe::getMsPorBeat() const { return msPorBeat; }
+const std::vector<std::array<double, 4>>& NivelJefe::getPlataformas() const { return plataformas; }
 int NivelJefe::getIntensidadActual() const { return intensidadActual; }

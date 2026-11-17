@@ -11,9 +11,9 @@ ConfiguracionDificultad::ConfiguracionDificultad(const std::string& nombre, doub
         throw std::invalid_argument("Configuracion de dificultad invalida: " + nombre);
 }
 
-ConfiguracionDificultad ConfiguracionDificultad::facil() { return {"Facil", 0.05, 0.40, 0, 450, 0.0, 1.2}; }
-ConfiguracionDificultad ConfiguracionDificultad::normal() { return {"Normal", 0.15, 0.20, 1, 350, 0.15, 1.0}; }
-ConfiguracionDificultad ConfiguracionDificultad::dificil() { return {"Dificil", 0.30, 0.08, 2, 250, 0.35, 0.8}; }
+ConfiguracionDificultad ConfiguracionDificultad::facil() { return {"Facil", 0.05, 0.40, 0, 800, 0.0, 1.4}; }
+ConfiguracionDificultad ConfiguracionDificultad::normal() { return {"Normal", 0.15, 0.20, 1, 600, 0.15, 1.2}; }
+ConfiguracionDificultad ConfiguracionDificultad::dificil() { return {"Dificil", 0.30, 0.08, 2, 450, 0.35, 1.0}; }
 
 const std::string& ConfiguracionDificultad::getNombre() const { return nombre; }
 double ConfiguracionDificultad::getTasaAprendizaje() const { return tasaAprendizaje; }

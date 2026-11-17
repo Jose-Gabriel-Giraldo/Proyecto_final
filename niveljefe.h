@@ -3,6 +3,7 @@
 
 #include "configuraciondificultad.h"
 #include "nivel.h"
+#include <array>
 #include <iosfwd>
 #include <map>
 #include <queue>
@@ -36,18 +37,19 @@ public:
     long long getDuracionMs() const;
     double getMsPorBeat() const;
     int getIntensidadActual() const;
+    const std::vector<std::array<double, 4>>& getPlataformas() const;
 
 private:
     void procesarRitmo();
     void lanzarAtaque(bool programarContratiempo);
     void resolverColisiones();
-    int mutantesVivos() const;
     void alEliminarProyectil(const Proyectil& p) override;
 
     ConfiguracionDificultad config;
     Rick* rick;
     PalmeraJefe* palmera;
     std::vector<BananaMutante*> mutantes;
+    std::vector<std::array<double, 4>> plataformas;
     std::queue<long long> beats;
     std::queue<int> intensidades;
     std::map<int, int> vivosPorAtaque;

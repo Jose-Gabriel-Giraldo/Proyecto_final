@@ -1,16 +1,18 @@
 #include <QApplication>
 #include <iostream>
-#include "vistaplantacion.h"
+#include "configuraciondificultad.h"
+#include "vistajefe.h"
 
 int main(int argc, char* argv[]) {
     QApplication app(argc, argv);
     try {
-        VistaPlantacion vista;
-        vista.setWindowTitle("Nivel 1 - La Plantación");
+        VistaJefe vista(ConfiguracionDificultad::normal());
+        vista.setWindowTitle("Nivel 2 - La Palmera Madre");
         vista.resize(1280, 720);
-        QObject::connect(&vista, &VistaPlantacion::nivelTerminado, [&vista](bool gano, int puntaje) {
+        QObject::connect(&vista, &VistaJefe::nivelTerminado, [&vista](bool gano, int puntaje) {
             std::cout << (gano ? "Gano" : "Perdio") << " con " << puntaje << " puntos" << std::endl;
             vista.reiniciar();
+            vista.iniciar();
         });
         vista.show();
         vista.iniciar();
