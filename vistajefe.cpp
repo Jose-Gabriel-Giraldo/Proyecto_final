@@ -29,6 +29,8 @@ VistaJefe::VistaJefe(const ConfiguracionDificultad& config, QWidget* parent)
     rDanado(":/rick_danado.png", 1, 1), pIdle(":/palmera_idle.png", 1, 1), pAtaques(":/palmera_ataques.png", 4, 1),
     pGolpe(":/palmera_golpe.png", 4, 12, false), pMuerte(":/palmera_muerte.png", 3, 2, false),
     mCaminar(":/banana_caminar.png", 3, 6), mAtacar(":/banana_atacar.png", 3, 10), hojas(":/proyectiles_hojas.png", 3, 8) {
+    pausado = false;
+    seleccion = 0;
     setMinimumSize(640, 360);
     setFocusPolicy(Qt::StrongFocus);
     connect(&timer, &QTimer::timeout, this, &VistaJefe::paso);
@@ -71,7 +73,8 @@ void VistaJefe::reiniciar() {
     tiempo = temblor = golpePalmera = ataqueVisual = 0;
     vidaPalmera = nivel->getPalmera().getVida();
     tipoAtaque = 0;
-    disparando = terminado = false;
+    disparando = terminado = pausado = false;
+    seleccion = 0;
     racimos.clear();
     explosiones.clear();
     tiempoExplosiones.clear();
@@ -84,6 +87,10 @@ void VistaJefe::reiniciar() {
 void VistaJefe::paso() {
     double dt = reloj.restart() / 1000.0;
     if (dt > 0.033) dt = 0.033;
+    if (pausado) {
+        update();
+        return;
+    }
     tiempo += dt;
 
     nivel->actualizar(dt);
@@ -317,17 +324,16 @@ void VistaJefe::dibujarHud(QPainter& p) {
     p.setBrush(QColor(255, 210, 90));
     p.drawRect(QRectF(0, 712, 1280 * avance, 8));
 
+    if (pausado) {
+        dibujarMenu(p, "PAUSA", QColor(255, 220, 120), QString("Puntaje: %1").arg(nivel->getPuntaje()), opciones(),
+                    seleccion);
+        return;
+    }
     if (nivel->getEstado() == NIVEL_EN_CURSO) return;
-    p.fillRect(QRectF(0, 0, 1280, 720), QColor(0, 0, 0, 160));
     bool gano = nivel->getEstado() == NIVEL_GANADO;
-    p.setPen(gano ? QColor(255, 220, 90) : QColor(240, 80, 80));
-    p.setFont(QFont("Courier New", 40, QFont::Bold));
-    QString titulo = gano ? "¡LA PALMERA MADRE CAYÓ!" : !r.estaVivo() ? "RICK HA CAÍDO" : "LA ANOMALÍA SE CERRÓ";
-    p.drawText(QRectF(0, 250, 1280, 60), Qt::AlignCenter, titulo);
-    p.setPen(Qt::white);
-    p.setFont(QFont("Courier New", 18, QFont::Bold));
-    p.drawText(QRectF(0, 330, 1280, 30), Qt::AlignCenter, QString("Puntaje: %1").arg(nivel->getPuntaje()));
-    p.drawText(QRectF(0, 380, 1280, 30), Qt::AlignCenter, "Presiona Enter para continuar");
+    QString titulo = gano ? "¡LA PALMERA MADRE CAYÓ!" : !r.estaVivo() ? "RICK HA CAÍDO" : "SE ACABÓ LA CANCIÓN";
+    dibujarMenu(p, titulo, gano ? QColor(255, 220, 90) : QColor(240, 80, 80),
+                QString("Puntaje: %1").arg(nivel->getPuntaje()), opciones(), seleccion);
 }
 
 int VistaJefe::accionDeTecla(int tecla) const {
@@ -341,15 +347,66 @@ int VistaJefe::accionDeTecla(int tecla) const {
     return -1;
 }
 
+std::vector<QString> VistaJefe::opciones() const {
+    if (pausado) return {"Continuar", "Reiniciar nivel", "Salir al menú"};
+    if (nivel->getEstado() == NIVEL_GANADO) return {"Continuar"};
+    return {"Reintentar", "Salir al menú"};
+}
+
+void VistaJefe::pausar(bool activa) {
+    pausado = activa;
+    seleccion = 0;
+    if (activa) {
+        for (int a : {ACCION_IZQUIERDA, ACCION_DERECHA, ACCION_DISPARAR}) nivel->procesarEntrada(a, false);
+        disparando = false;
+#ifdef CON_MUSICA
+        musica->pause();
+#endif
+    } else {
+#ifdef CON_MUSICA
+        musica->play();
+#endif
+    }
+    setFocus();
+    update();
+}
+
+void VistaJefe::elegirOpcion() {
+    QString opcion = opciones()[seleccion];
+    seleccion = 0;
+    if (opcion == "Continuar") {
+        if (pausado) pausar(false);
+        else emit nivelTerminado(true, nivel->getPuntaje());
+    } else if (opcion == "Salir al menú") {
+        emit salirAlMenu();
+    } else {
+        reiniciar();
+        iniciar();
+    }
+}
+
 void VistaJefe::keyPressEvent(QKeyEvent* e) {
     if (e->isAutoRepeat()) return;
-    if (nivel->getEstado() != NIVEL_EN_CURSO) {
-        if (e->key() == Qt::Key_Return || e->key() == Qt::Key_Enter)
-            emit nivelTerminado(nivel->getEstado() == NIVEL_GANADO, nivel->getPuntaje());
+    int tecla = e->key();
+    bool enMenu = pausado || nivel->getEstado() != NIVEL_EN_CURSO;
+    if (!enMenu && (tecla == Qt::Key_P || tecla == Qt::Key_Escape)) {
+        pausar(true);
         return;
     }
-    int a = accionDeTecla(e->key());
-    if (a < 0) { QWidget::keyPressEvent(e); return; }
+    if (enMenu) {
+        int n = static_cast<int>(opciones().size());
+        if (tecla == Qt::Key_W || tecla == Qt::Key_Up) seleccion = (seleccion + n - 1) % n;
+        else if (tecla == Qt::Key_S || tecla == Qt::Key_Down) seleccion = (seleccion + 1) % n;
+        else if (tecla == Qt::Key_Return || tecla == Qt::Key_Enter) elegirOpcion();
+        else if (pausado && (tecla == Qt::Key_P || tecla == Qt::Key_Escape)) pausar(false);
+        update();
+        return;
+    }
+    int a = accionDeTecla(tecla);
+    if (a < 0) {
+        QWidget::keyPressEvent(e);
+        return;
+    }
     if (a == ACCION_DISPARAR) disparando = true;
     nivel->procesarEntrada(a, true);
 }

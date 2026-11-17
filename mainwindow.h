@@ -2,22 +2,32 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QStackedWidget>
+#include "configuraciondificultad.h"
 
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
-QT_END_NAMESPACE
-
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow {
     Q_OBJECT
-
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    MainWindow(QWidget* parent = nullptr);
 
 private:
-    Ui::MainWindow *ui;
+    void crearMenu();
+    void mostrar(QWidget* pantalla);
+    void volverAlMenu();
+    void error(const std::exception& e);
+
+    void empezar(const ConfiguracionDificultad& dificultad);
+    void cinematica1();
+    void nivel1();
+    void cinematica2();
+    void nivel2();
+    void epilogo();
+
+    QStackedWidget* pantallas;
+    QWidget* menu;
+    QWidget* actual;
+    ConfiguracionDificultad config;
+    int puntajeNivel1, puntajeNivel2;
 };
-#endif // MAINWINDOW_H
+
+#endif

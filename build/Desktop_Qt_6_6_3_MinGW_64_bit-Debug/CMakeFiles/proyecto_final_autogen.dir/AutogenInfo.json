@@ -391,6 +391,12 @@
 			null
 		],
 		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/cinematica.h",
+			"MU",
+			"EWIEGA46WW/moc_cinematica.cpp",
+			null
+		],
+		[
 			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/configuraciondificultad.h",
 			"MU",
 			"EWIEGA46WW/moc_configuraciondificultad.cpp",
@@ -602,6 +608,11 @@
 		],
 		[
 			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/bananamutante.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/cinematica.cpp",
 			"MU",
 			null
 		],

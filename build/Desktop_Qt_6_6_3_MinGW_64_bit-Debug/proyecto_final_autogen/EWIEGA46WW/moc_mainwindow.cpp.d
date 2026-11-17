@@ -139,8 +139,11 @@ C:/Users/Jose\ Gabriel\ Giraldo/OneDrive/Documentos/Universidad/Sexto\ semestre/
   C:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.6.3/mingw_64/include/QtWidgets/QStackedWidget \
+  C:/Qt/6.6.3/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qsizepolicy.h \
+  C:/Qt/6.6.3/mingw_64/include/QtWidgets/qstackedwidget.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
@@ -344,4 +347,5 @@ C:/Users/Jose\ Gabriel\ Giraldo/OneDrive/Documentos/Universidad/Sexto\ semestre/
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/Jose\ Gabriel\ Giraldo/OneDrive/Documentos/Universidad/Sexto\ semestre/Info/proyecto_final/configuraciondificultad.h

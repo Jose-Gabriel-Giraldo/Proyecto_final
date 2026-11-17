@@ -4,6 +4,7 @@
 #include <QPainter>
 #include <QPixmap>
 #include <QString>
+#include <vector>
 
 class Animacion {
 public:
@@ -28,5 +29,8 @@ private:
     bool repetir;
     double tiempo;
 };
+
+void dibujarMenu(QPainter& p, const QString& titulo, const QColor& color, const QString& detalle,
+                 const std::vector<QString>& opciones, int seleccion);
 
 #endif

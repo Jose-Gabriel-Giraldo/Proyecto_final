@@ -47,6 +47,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         animacion.h animacion.cpp
         vistaplantacion.h vistaplantacion.cpp
         vistajefe.h vistajefe.cpp
+        cinematica.h cinematica.cpp
     )
 else()
     if(ANDROID)
@@ -82,7 +83,7 @@ set_target_properties(proyecto_final PROPERTIES
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
     MACOSX_BUNDLE TRUE
-    WIN32_EXECUTABLE FALSE
+    WIN32_EXECUTABLE TRUE
 )
 
 include(GNUInstallDirs)

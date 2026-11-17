@@ -42,3 +42,36 @@ void Animacion::dibujar(QPainter& p, double centroX, double base, double alto, b
 int Animacion::getCuadros() const { return cuadros; }
 int Animacion::getAnchoCuadro() const { return hoja.width() / cuadros; }
 int Animacion::getAltoCuadro() const { return hoja.height(); }
+
+void dibujarMenu(QPainter& p, const QString& titulo, const QColor& color, const QString& detalle,
+                 const std::vector<QString>& opciones, int seleccion) {
+    p.fillRect(QRectF(0, 0, 1280, 720), QColor(0, 0, 0, 170));
+    double alto = 190 + 64.0 * opciones.size();
+    QRectF caja(360, 360 - alto / 2, 560, alto);
+    p.setPen(QPen(color, 3));
+    p.setBrush(QColor(10, 14, 20, 235));
+    p.drawRoundedRect(caja, 16, 16);
+
+    p.setPen(color);
+    p.setFont(QFont("Courier New", 28, QFont::Bold));
+    p.drawText(QRectF(caja.x(), caja.y() + 20, caja.width(), 50), Qt::AlignCenter, titulo);
+    p.setPen(Qt::white);
+    p.setFont(QFont("Courier New", 16));
+    p.drawText(QRectF(caja.x(), caja.y() + 75, caja.width(), 30), Qt::AlignCenter, detalle);
+
+    for (int i = 0; i < static_cast<int>(opciones.size()); i++) {
+        QRectF boton(caja.x() + 110, caja.y() + 120 + i * 64, 340, 48);
+        bool elegido = i == seleccion;
+        p.setPen(QPen(elegido ? color : QColor(110, 110, 110), 2));
+        p.setBrush(elegido ? QColor(60, 130, 60, 230) : QColor(30, 34, 40, 230));
+        p.drawRoundedRect(boton, 10, 10);
+        p.setPen(Qt::white);
+        p.setFont(QFont("Courier New", 18, QFont::Bold));
+        p.drawText(boton, Qt::AlignCenter, (elegido ? "> " : "") + opciones[i]);
+    }
+
+    p.setPen(QColor(190, 190, 190));
+    p.setFont(QFont("Courier New", 12));
+    p.drawText(QRectF(caja.x(), caja.y() + alto - 34, caja.width(), 24), Qt::AlignCenter,
+               "W/S o flechas para elegir - Enter para aceptar");
+}

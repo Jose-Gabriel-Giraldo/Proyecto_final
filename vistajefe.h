@@ -29,6 +29,7 @@ public:
 
 signals:
     void nivelTerminado(bool gano, int puntaje);
+    void salirAlMenu();
 
 protected:
     void paintEvent(QPaintEvent*) override;
@@ -46,6 +47,11 @@ private:
     void dibujarProyectiles(QPainter& p);
     void dibujarHud(QPainter& p);
     int accionDeTecla(int tecla) const;
+    std::vector<QString> opciones() const;
+    void pausar(bool activa);
+    void elegirOpcion();
+    bool pausado;
+    int seleccion;
 
     ConfiguracionDificultad config;
     NivelJefe* nivel;
