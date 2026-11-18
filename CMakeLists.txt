@@ -48,6 +48,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         vistaplantacion.h vistaplantacion.cpp
         vistajefe.h vistajefe.cpp
         cinematica.h cinematica.cpp
+        fisicaonda.h fisicaonda.cpp
     )
 else()
     if(ANDROID)

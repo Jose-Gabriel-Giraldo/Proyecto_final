@@ -12,6 +12,13 @@
 ModuloAccion::ModuloAccion(const ModuloRazonamiento& razonamiento, ModuloAprendizaje& aprendizaje, unsigned semilla)
     : razonamiento(&razonamiento), aprendizaje(&aprendizaje), siguienteId(0), generador(semilla) {}
 
+Proyectil* ModuloAccion::crearRacimo(double xBoca, double yBoca, double xObjetivo, double ySuelo, double T, int id) {
+    double g = 1400, vx, vy;
+    FisicaParabolica::velocidadApuntado(xObjetivo - xBoca, (ySuelo - 60) - (yBoca - 30), T, g, vx, vy);
+    return new Proyectil(xBoca - 30, yBoca - 30, vx, vy, 60, 60, 1, false, PROYECTIL_RACIMO, new FisicaParabolica(g), id,
+                         T + 1.0);
+}
+
 int ModuloAccion::ejecutar(double xBoca, double yBoca, double ySuelo, int mutantesVivos,
                            const ConfiguracionDificultad& config, std::vector<Proyectil*>& proyectiles,
                            std::vector<BananaMutante*>& invocados) {
@@ -20,32 +27,24 @@ int ModuloAccion::ejecutar(double xBoca, double yBoca, double ySuelo, int mutant
     double objetivo = razonamiento->getObjetivoX();
 
     if (ataque == ATAQUE_BANANOS) {
-        double v0 = 700, distancia = xBoca - objetivo;
-        if (distancia < 100) distancia = 100;
-        double c = v0 / (distancia * 1.6);
-        if (c < 0.3) c = 0.3;
-        if (c > 1.0) c = 1.0;
-        const double alturas[3] = {ySuelo - 70, ySuelo - 230, ySuelo - 350};
         int libre = std::uniform_int_distribution<int>(0, 2)(generador);
-        double atras = 0;
         for (int i = 0; i < 3; i++) {
             if (i == libre) continue;
-            proyectiles.push_back(new Proyectil(xBoca + atras, alturas[i], -v0, 0, 40, 20, 1, false, PROYECTIL_BANANO,
-                                                new FisicaArrastre(c), id, 5.0));
-            atras += 260;
+            double dx = objetivo + (i - 1) * 200 - xBoca, dy = ySuelo - 60 - yBoca, d = std::hypot(dx, dy);
+            double c = 0.8, v0 = d * c * 1.5;
+            proyectiles.push_back(new Proyectil(xBoca - 18, yBoca - 18, v0 * dx / d, v0 * dy / d, 36, 36, 1, false,
+                                                PROYECTIL_BANANO, new FisicaArrastre(c), id, 5.0));
         }
     } else if (ataque == ATAQUE_RACIMOS) {
-        double T = config.getTiempoVueloRacimo(), g = 1400, vx, vy;
-        FisicaParabolica::velocidadApuntado(objetivo - 25 - xBoca, ySuelo - 60 - yBoca, T, g, vx, vy);
-        proyectiles.push_back(new Proyectil(xBoca, yBoca, vx, vy, 50, 60, 1, false, PROYECTIL_RACIMO,
-                                            new FisicaParabolica(g), id, T + 1.0));
+        for (double desvio : {-130.0, 130.0})
+            proyectiles.push_back(crearRacimo(xBoca, yBoca, objetivo + desvio, ySuelo, config.getTiempoVueloRacimo(), id));
     } else if (ataque == ATAQUE_HOJAS) {
         int n = std::uniform_int_distribution<int>(3, 5)(generador);
         std::uniform_real_distribution<double> desvio(-320, 320), altura(0, 150), angulo(-0.6, 0.6);
         for (int i = 0; i < n; i++) {
             double xa = objetivo + desvio(generador);
             if (xa < 40) xa = 40;
-            if (xa > 860) xa = 860;
+            if (xa > 1240) xa = 1240;
             double ya = -100 - altura(generador);
             FisicaPendular* f = new FisicaPendular(xa, ya, 70, angulo(generador), 0.3, 1400, 240);
             proyectiles.push_back(new Proyectil(f->getPuntoX() - 13, f->getPuntoY() - 9, 0, 0, 26, 18, 1,
@@ -53,8 +52,10 @@ int ModuloAccion::ejecutar(double xBoca, double yBoca, double ySuelo, int mutant
         }
     } else {
         int cantidad = 3 - mutantesVivos < 2 ? 3 - mutantesVivos : 2;
-        for (int i = 0; i < cantidad; i++)
-            invocados.push_back(new BananaMutante(xBoca - 80 - i * 80, ySuelo - 110, 40, 990, false, 110, 2000, 2));
+        for (int i = 0; i < cantidad; i++) {
+            double x = i % 2 == 0 ? 0 : 1220;
+            invocados.push_back(new BananaMutante(x, ySuelo - 110, 0, 1220, false, 110, 2000, 2));
+        }
     }
 
     aprendizaje->registrarPendiente(id, razonamiento->getContexto(), ataque);

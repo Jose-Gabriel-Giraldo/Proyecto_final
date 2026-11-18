@@ -9,6 +9,7 @@ public:
 
     void actualizar(double dt) override;
     Proyectil* disparar() override;
+    Proyectil* dispararHacia(double objetivoX, double objetivoY);
     void recibirDanio(int d) override;
 
     void mover(int dir);

@@ -608,10 +608,10 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "proyecto_final_musica_obj::@6890427a1f51a3e7e1df"
+			"id" : "proyecto_final_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "proyecto_final_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "proyecto_final_musica_obj::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
@@ -797,7 +797,7 @@
 				45,
 				47,
 				49,
-				98
+				112
 			]
 		},
 		{
@@ -807,9 +807,9 @@
 				4,
 				53,
 				54,
-				96,
-				97,
-				99
+				110,
+				111,
+				113
 			]
 		},
 		{
@@ -863,16 +863,30 @@
 				92,
 				93,
 				94,
-				95
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				100,
-				101,
-				102
+				114,
+				115,
+				116
 			]
 		}
 	],
@@ -1204,7 +1218,32 @@
 		},
 		{
 			"backtrace" : 70,
+			"path" : "recursos/banana_rotar.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
 			"path" : "recursos/cielo.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/efecto_hojas.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/efecto_impacto.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/efecto_onda.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/fondo_frontal.png",
 			"sourceGroupIndex" : 4
 		},
 		{
@@ -1274,6 +1313,26 @@
 		},
 		{
 			"backtrace" : 70,
+			"path" : "recursos/palmera_f1_ataque.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/palmera_f1_idle.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/palmera_f2_ataque.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/palmera_f2_idle.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
 			"path" : "recursos/palmera_golpe.png",
 			"sourceGroupIndex" : 4
 		},
@@ -1324,6 +1383,16 @@
 		},
 		{
 			"backtrace" : 70,
+			"path" : "recursos/racimo_brillo.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/racimo_idle.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
 			"path" : "recursos/rick_atacar.png",
 			"sourceGroupIndex" : 4
 		},
@@ -1340,6 +1409,21 @@
 		{
 			"backtrace" : 70,
 			"path" : "recursos/rick_danado.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/rick_espalda_caminar.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/rick_espalda_golpe.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/rick_espalda_idle.png",
 			"sourceGroupIndex" : 4
 		},
 		{

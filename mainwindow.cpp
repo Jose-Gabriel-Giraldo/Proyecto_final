@@ -49,7 +49,7 @@ void MainWindow::crearMenu() {
 
     capa->addStretch();
     QLabel* controles = new QLabel("Morty: A/D moverse · W saltar · Shift correr · J disparar · E liana/jaula\n"
-                                   "Rick: A/D moverse · W saltar · J disparar · K portal          P: pausa");
+                                   "Rick: A/D moverse · W saltar · mouse apuntar y disparar · K portal     P: pausa");
     controles->setAlignment(Qt::AlignCenter);
     controles->setStyleSheet("color: white; font: 14px 'Courier New';");
     capa->addWidget(controles);
@@ -118,8 +118,8 @@ void MainWindow::nivel1() {
 void MainWindow::cinematica2() {
     try {
         Cinematica* c = new Cinematica("La Palmera Madre", ":/nivel2.png", Cinematica::palmeraMadre(),
-                                       "Derriba a la Palmera Madre antes de que termine la canción. Cuando la música "
-                                       "está en calma es invulnerable.",
+                                       "Dispárale a los racimos que lanza la Palmera Madre: es la única forma de "
+                                       "dañarla. Derríbala antes de que termine la canción.",
                                        Cinematica::controlesRick());
         connect(c, &Cinematica::terminada, this, &MainWindow::nivel2);
         mostrar(c);

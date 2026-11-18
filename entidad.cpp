@@ -21,6 +21,11 @@ double Entidad::getCentroY() const { return y + alto / 2; }
 bool Entidad::estaActiva() const { return activa; }
 ModeloFisico* Entidad::getFisica() const { return fisica; }
 
+void Entidad::setTamano(double nAncho, double nAlto) {
+    ancho = nAncho;
+    alto = nAlto;
+}
+
 void Entidad::setPosicion(double nx, double ny) { x = nx; y = ny; }
 void Entidad::setVelocidad(double nvx, double nvy) { vx = nvx; vy = nvy; }
 

@@ -32,7 +32,7 @@ void ModuloPercepcion::percibir() {
     enAire = !rick->estaEnSuelo();
     velX = historialX.size() < 2 ? 0 : (historialX.back() - historialX.front()) / ((historialX.size() - 1) * dtFrame);
 
-    zona = static_cast<int>((xRick - 40) / 240);
+    zona = static_cast<int>(xRick / 427);
     if (zona < 0) zona = 0;
     if (zona > 2) zona = 2;
 

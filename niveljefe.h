@@ -19,6 +19,7 @@ public:
     static const double ANCHO_PANTALLA;
     static const double ALTO_PANTALLA;
     static const double Y_SUELO;
+    static const double Y_HORIZONTE;
 
     NivelJefe(const ConfiguracionDificultad& config, unsigned semilla = std::random_device{}());
     ~NivelJefe() override;
@@ -27,6 +28,7 @@ public:
     void sincronizar(long long posMs);
     void actualizar(double dt) override;
     void procesarEntrada(int a, bool presionada) override;
+    void dispararHacia(double x, double y);
 
     const Rick& getRick() const;
     const PalmeraJefe& getPalmera() const;
@@ -56,7 +58,7 @@ private:
     double msPorBeat, posCancionMs, proximoContratiempo;
     long long duracionMs;
     int contadorBeats, idAtaqueMutantes, intensidadActual;
-    bool izquierda, derecha, disparando;
+    bool izquierda, derecha;
     std::mt19937 generador;
 };
 

@@ -6,10 +6,10 @@
 #include "modulorazonamiento.h"
 
 PalmeraJefe::PalmeraJefe(double x, double y, const Rick& rick, const ConfiguracionDificultad& config, unsigned semilla)
-    : Personaje(x, y, 260, 440, 5000), fase(1), config(&config), aprendizaje(new ModuloAprendizaje()),
+    : Personaje(x, y, 240, 330, 7500), fase(1), config(&config), aprendizaje(new ModuloAprendizaje()),
     percepcion(new ModuloPercepcion(rick)), razonamiento(new ModuloRazonamiento(*percepcion, *aprendizaje, semilla)),
     accion(new ModuloAccion(*razonamiento, *aprendizaje, semilla + 1)), pendiente(false), tiempoPendiente(0),
-    dirMovimiento(-1), xMin(x - 220), xMax(x) {
+    dirMovimiento(-1), xMin(x - 80), xMax(x + 80) {
     duracionInvulnerable = 0;
 }
 
@@ -43,12 +43,15 @@ void PalmeraJefe::preparar(long long tiempoMs, bool contratiempo, int mutantesVi
     tiempoPendiente = tiempoMs;
 }
 
-int PalmeraJefe::lanzar(int mutantesVivos, std::vector<Proyectil*>& proyectiles,
+int PalmeraJefe::lanzar(int mutantesVivos, double ySuelo, std::vector<Proyectil*>& proyectiles,
                         std::vector<BananaMutante*>& invocados) {
     if (!pendiente) return -1;
     pendiente = false;
-    return accion->ejecutar(x + 30, y + 130, y + alto, mutantesVivos, *config, proyectiles, invocados);
+    return accion->ejecutar(getXBoca(), getYBoca(), ySuelo, mutantesVivos, *config, proyectiles, invocados);
 }
+
+double PalmeraJefe::getXBoca() const { return getCentroX(); }
+double PalmeraJefe::getYBoca() const { return y + alto * 0.45; }
 
 void PalmeraJefe::notificarResultado(int idAtaque, bool impacto) {
     aprendizaje->resolver(idAtaque, impacto, config->getTasaAprendizaje());

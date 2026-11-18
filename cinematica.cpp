@@ -171,8 +171,9 @@ std::vector<std::pair<QString, QString>> Cinematica::controlesMorty() {
 
 std::vector<std::pair<QString, QString>> Cinematica::controlesRick() {
     return {{"A / D", "Moverse"},
-            {"W / Espacio", "Saltar"},
-            {"J / X", "Disparar el rayo"},
+            {"W / Espacio", "Saltar a las plataformas"},
+            {"Mouse", "Apuntar"},
+            {"Click izquierdo", "Disparar (mantener)"},
             {"K / Shift", "Portal (recarga 3 s)"},
             {"P", "Pausa"}};
 }
@@ -213,6 +214,8 @@ std::vector<LineaDialogo> Cinematica::palmeraMadre() {
             {"MORTY", "¿Y cómo la vencemos?"},
             {"RICK", "Tú no. Yo. Tengo una pistola de rayos, un portal de bolsillo y un ego del tamaño de esta plantación. "
                      "Si la derribo antes de que termine la canción, la anomalía se cierra."},
+            {"RICK", "Su tronco es inmune a mis rayos, pero los racimos que lanza están cargados de suero. Revienta uno "
+                     "en el aire y le va a doler de verdad."},
             {"MORTY", "¿Y si no?"},
             {"RICK", "Entonces 1928 se queda con bananas asesinas para siempre y los libros de historia se vuelven todavía "
                      "más raros. Quédate atrás, Morty."},

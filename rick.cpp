@@ -30,6 +30,17 @@ Proyectil* Rick::disparar() {
                          nullptr, -1, 1.2);
 }
 
+Proyectil* Rick::dispararHacia(double objetivoX, double objetivoY) {
+    if (aturdido > 0 || recargaDisparo > 0) return nullptr;
+    double ox = getCentroX(), oy = y + 15;
+    double dx = objetivoX - ox, dy = objetivoY - oy, d = std::hypot(dx, dy);
+    if (d < 1) return nullptr;
+    recargaDisparo = 0.2;
+    int danio = static_cast<int>(std::lround(10 * multiplicador));
+    return new Proyectil(ox - 12, oy - 12, 1300.0 * dx / d, 1300.0 * dy / d, 24, 24, danio, true, PROYECTIL_RAYO_RICK,
+                         nullptr, -1, 2.0);
+}
+
 void Rick::recibirDanio(int d) {
     int antes = vida;
     Personaje::recibirDanio(d);

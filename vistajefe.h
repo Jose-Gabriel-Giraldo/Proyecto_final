@@ -35,39 +35,46 @@ protected:
     void paintEvent(QPaintEvent*) override;
     void keyPressEvent(QKeyEvent* e) override;
     void keyReleaseEvent(QKeyEvent* e) override;
+    void mousePressEvent(QMouseEvent* e) override;
+    void mouseReleaseEvent(QMouseEvent* e) override;
+    void mouseMoveEvent(QMouseEvent* e) override;
 
 private:
     void paso();
     void sincronizarMusica();
     void actualizarEfectos(double dt);
+    void agregarEfecto(QPointF pos, int tipo);
     void dibujarRitmo(QPainter& p);
     void dibujarPalmera(QPainter& p);
     void dibujarRick(QPainter& p);
     void dibujarMutantes(QPainter& p);
     void dibujarProyectiles(QPainter& p);
+    void dibujarEfectos(QPainter& p);
     void dibujarHud(QPainter& p);
     int accionDeTecla(int tecla) const;
     std::vector<QString> opciones() const;
     void pausar(bool activa);
     void elegirOpcion();
-    bool pausado;
-    int seleccion;
+    QPointF aEscena(QPointF punto) const;
 
     ConfiguracionDificultad config;
     NivelJefe* nivel;
     QTimer timer;
     QElapsedTimer reloj;
-    double tiempo, temblor, golpePalmera, ataqueVisual;
-    int vidaPalmera, tipoAtaque;
-    bool disparando, terminado;
+    double tiempo, temblor, golpePalmera, ataqueVisual, tiempoFin;
+    int vidaPalmera, tipoAtaque, seleccion;
+    bool disparando, terminado, pausado;
+    QPointF mira;
 
-    QPixmap fondo, plataforma, banano, racimo, explosion;
-    Animacion rIdle, rCaminar, rAtacar, rDanado;
-    Animacion pIdle, pAtaques, pGolpe, pMuerte;
-    Animacion mCaminar, mAtacar, hojas;
+    QPixmap fondo, racimo, racimoBrillo;
+    Animacion rIdle, rCaminar;
+    Animacion p1Idle, p1Ataque, p2Idle, p2Ataque;
+    Animacion mCaminar, mAtacar, banano, hojas, impacto, onda;
     std::map<const Proyectil*, QPointF> racimos;
-    std::vector<QPointF> explosiones;
-    std::vector<double> tiempoExplosiones;
+    std::map<const Proyectil*, bool> racimosExplotados;
+    std::vector<QPointF> posEfectos;
+    std::vector<int> tipoEfectos;
+    std::vector<double> tiempoEfectos;
 
 #ifdef CON_MUSICA
     QMediaPlayer* musica;
