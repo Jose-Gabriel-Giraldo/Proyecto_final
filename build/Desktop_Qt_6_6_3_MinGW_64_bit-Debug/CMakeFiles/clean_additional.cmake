@@ -5,7 +5,10 @@ if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "Debug")
   file(REMOVE_RECURSE
   "CMakeFiles\\proyecto_final_autogen.dir\\AutogenUsed.txt"
   "CMakeFiles\\proyecto_final_autogen.dir\\ParseCache.txt"
+  "CMakeFiles\\pruebas_logica_autogen.dir\\AutogenUsed.txt"
+  "CMakeFiles\\pruebas_logica_autogen.dir\\ParseCache.txt"
   "proyecto_final_autogen"
   "proyecto_final_musica_obj_autogen"
+  "pruebas_logica_autogen"
   )
 endif()

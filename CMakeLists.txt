@@ -97,3 +97,13 @@ install(TARGETS proyecto_final
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(proyecto_final)
 endif()
+
+# ---------------- Casos de prueba de la capa logica (consola, sin Qt) ----------------
+add_executable(pruebas_logica
+    pruebas.cpp
+    entidad.cpp fisicaparabolica.cpp fisicapendular.cpp fisicaarrastre.cpp fisicaonda.cpp
+    personaje.cpp proyectil.cpp morty.cpp rick.cpp bananamutante.cpp
+    configuraciondificultad.cpp moduloaprendizaje.cpp modulopercepcion.cpp modulorazonamiento.cpp
+    moduloaccion.cpp palmerajefe.cpp nivel.cpp nivelplantacion.cpp niveljefe.cpp
+)
+target_compile_definitions(pruebas_logica PRIVATE RUTA_MAPA="${CMAKE_CURRENT_SOURCE_DIR}/recursos/MapaRitmo.txt")

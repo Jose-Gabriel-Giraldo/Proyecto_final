@@ -52,6 +52,9 @@
 			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaConfig.cmake",
 			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
 			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake",
+			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake",
+			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
 			"C:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake"
 		],
 		"nodes" : 
@@ -86,19 +89,19 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 90,
+				"line" : 91,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 67,
+				"line" : 68,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 71,
+				"line" : 72,
 				"parent" : 0
 			},
 			{
@@ -293,103 +296,157 @@
 			},
 			{
 				"command" : 7,
-				"file" : 11,
+				"file" : 15,
+				"line" : 41,
+				"parent" : 40
+			},
+			{
+				"file" : 18,
+				"parent" : 44
+			},
+			{
+				"command" : 10,
+				"file" : 18,
+				"line" : 39,
+				"parent" : 45
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 111,
+				"parent" : 46
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 47
+			},
+			{
+				"file" : 17,
+				"parent" : 48
+			},
+			{
+				"command" : 7,
+				"file" : 17,
 				"line" : 52,
-				"parent" : 33
+				"parent" : 49
 			},
 			{
 				"file" : 16,
-				"parent" : 44
+				"parent" : 50
 			},
 			{
 				"command" : 6,
 				"file" : 16,
 				"line" : 61,
-				"parent" : 45
+				"parent" : 51
+			},
+			{
+				"command" : 6,
+				"file" : 16,
+				"line" : 76,
+				"parent" : 51
+			},
+			{
+				"command" : 7,
+				"file" : 11,
+				"line" : 52,
+				"parent" : 33
+			},
+			{
+				"file" : 19,
+				"parent" : 54
+			},
+			{
+				"command" : 6,
+				"file" : 19,
+				"line" : 61,
+				"parent" : 55
 			},
 			{
 				"command" : 11,
 				"file" : 1,
-				"line" : 72,
+				"line" : 73,
 				"parent" : 0
 			},
 			{
 				"command" : 16,
 				"file" : 1,
-				"line" : 65,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
 				"command" : 15,
 				"file" : 0,
 				"line" : 389,
-				"parent" : 48
+				"parent" : 58
 			},
 			{
 				"command" : 14,
 				"file" : 0,
 				"line" : 337,
-				"parent" : 49
+				"parent" : 59
 			},
 			{
 				"command" : 13,
 				"file" : 0,
 				"line" : 2153,
-				"parent" : 50
+				"parent" : 60
 			},
 			{
 				"command" : 12,
 				"file" : 0,
 				"line" : 1797,
-				"parent" : 51
+				"parent" : 61
 			},
 			{
 				"command" : 16,
 				"file" : 1,
-				"line" : 70,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
 				"command" : 15,
 				"file" : 0,
 				"line" : 389,
-				"parent" : 53
+				"parent" : 63
 			},
 			{
 				"command" : 14,
 				"file" : 0,
 				"line" : 337,
-				"parent" : 54
+				"parent" : 64
 			},
 			{
 				"command" : 12,
 				"file" : 0,
 				"line" : 2150,
-				"parent" : 55
+				"parent" : 65
 			},
 			{
 				"command" : 19,
 				"file" : 1,
-				"line" : 97,
+				"line" : 98,
 				"parent" : 0
 			},
 			{
 				"command" : 18,
 				"file" : 0,
 				"line" : 826,
-				"parent" : 57
+				"parent" : 67
 			},
 			{
 				"command" : 17,
 				"file" : 0,
 				"line" : 767,
-				"parent" : 58
+				"parent" : 68
 			},
 			{
 				"command" : 12,
 				"file" : 0,
 				"line" : 1881,
-				"parent" : 59
+				"parent" : 69
 			}
 		]
 	},
@@ -405,7 +462,7 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 47,
+					"backtrace" : 57,
 					"define" : "CON_MUSICA"
 				},
 				{
@@ -423,6 +480,10 @@
 				{
 					"backtrace" : 7,
 					"define" : "QT_MULTIMEDIA_LIB"
+				},
+				{
+					"backtrace" : 37,
+					"define" : "QT_NEEDS_QMAIN"
 				},
 				{
 					"backtrace" : 7,
@@ -536,7 +597,8 @@
 				46,
 				48,
 				50,
-				51
+				52,
+				53
 			]
 		}
 	],
@@ -577,7 +639,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "",
+				"fragment" : "-mwindows",
 				"role" : "flags"
 			},
 			{
@@ -636,7 +698,22 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 46,
+				"backtrace" : 52,
+				"fragment" : "-lmingw32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 52,
+				"fragment" : "C:\\Qt\\6.6.3\\mingw_64\\lib\\libQt6EntryPoint.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 53,
+				"fragment" : "-lshell32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 56,
 				"fragment" : "-lws2_32",
 				"role" : "libraries"
 			},
@@ -685,7 +762,8 @@
 				46,
 				48,
 				50,
-				51
+				52,
+				53
 			]
 		},
 		{
@@ -717,7 +795,8 @@
 				45,
 				47,
 				49,
-				98
+				51,
+				114
 			]
 		},
 		{
@@ -725,26 +804,24 @@
 			"sourceIndexes" : 
 			[
 				4,
-				53,
-				54,
-				96,
-				97,
-				99
+				55,
+				56,
+				112,
+				113,
+				115
 			]
 		},
 		{
 			"name" : "Object Files",
 			"sourceIndexes" : 
 			[
-				52
+				54
 			]
 		},
 		{
 			"name" : "Resources",
 			"sourceIndexes" : 
 			[
-				55,
-				56,
 				57,
 				58,
 				59,
@@ -783,16 +860,32 @@
 				92,
 				93,
 				94,
-				95
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				100,
-				101,
-				102
+				116,
+				117,
+				118
 			]
 		}
 	],
@@ -1070,250 +1163,331 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "recursos/cinematica.h",
+			"path" : "cinematica.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "recursos/cinematica.cpp",
+			"path" : "cinematica.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 52,
+			"backtrace" : 4,
+			"path" : "fisicaonda.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "fisicaonda.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 62,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/.rcc/qrc_recursos.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 56,
+			"backtrace" : 66,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/.rcc/qrc_musica.obj",
 			"sourceGroupIndex" : 3
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/.rcc/recursos.qrc",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/MapaRitmo.txt",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/banana_atacar.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/banana_caminar.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/banana_danado.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/banana_idle.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
+			"path" : "recursos/banana_rotar.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
 			"path" : "recursos/cielo.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
+			"path" : "recursos/efecto_hojas.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/efecto_impacto.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/efecto_onda.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/fondo_frontal.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
 			"path" : "recursos/jaula_idle.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/jaula_liberar.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/montanas.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/morty_atacar.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/morty_caminar.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/morty_correr.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/morty_danado.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/morty_idle.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/morty_liana.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/morty_soltar.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/nivel1.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/nivel2.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/palmera_ataques.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
+			"path" : "recursos/palmera_f1_ataque.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/palmera_f1_idle.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/palmera_f2_ataque.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/palmera_f2_idle.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
 			"path" : "recursos/palmera_golpe.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/palmera_idle.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/palmera_muerte.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/plataforma.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/platanal.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/proyectiles_banano.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/proyectiles_explosion.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/proyectiles_hojas.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/proyectiles_onda.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/proyectiles_racimo.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
+			"path" : "recursos/racimo_brillo.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/racimo_idle.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
 			"path" : "recursos/rick_atacar.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/rick_caminar.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/rick_correr.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/rick_danado.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
+			"path" : "recursos/rick_espalda_caminar.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/rick_espalda_golpe.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
+			"path" : "recursos/rick_espalda_idle.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 70,
 			"path" : "recursos/rick_idle.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/soldado_disparar.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/soldado_idle.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/soldado_muerte.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/trabajador_agradecer.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/trabajador_caminar.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/trabajador_correr.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/trabajador_huir.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/trabajador_idle.png",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/.rcc/musica.qrc",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 70,
 			"path" : "recursos/musica.mp3",
 			"sourceGroupIndex" : 2
 		},

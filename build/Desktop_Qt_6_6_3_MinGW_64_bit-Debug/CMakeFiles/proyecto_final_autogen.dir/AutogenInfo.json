@@ -415,6 +415,12 @@
 			null
 		],
 		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/fisicaonda.h",
+			"MU",
+			"EWIEGA46WW/moc_fisicaonda.cpp",
+			null
+		],
+		[
 			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/fisicaparabolica.h",
 			"MU",
 			"EWIEGA46WW/moc_fisicaparabolica.cpp",
@@ -533,6 +539,7 @@
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
 		"QT_MULTIMEDIA_LIB",
+		"QT_NEEDS_QMAIN",
 		"QT_NETWORK_LIB",
 		"QT_WIDGETS_LIB",
 		"UNICODE",
@@ -628,6 +635,11 @@
 		],
 		[
 			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/fisicaarrastre.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/fisicaonda.cpp",
 			"MU",
 			null
 		],

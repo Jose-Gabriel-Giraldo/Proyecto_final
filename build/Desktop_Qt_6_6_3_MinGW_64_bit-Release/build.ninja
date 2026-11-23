@@ -307,6 +307,201 @@ build CMakeFiles/proyecto_final_musica_obj.dir/ddb28c00bff0e4ce123fc95e25df94f9/
 
 build proyecto_final_musica_obj: phony CMakeFiles/proyecto_final_musica_obj.dir/ddb28c00bff0e4ce123fc95e25df94f9/.rcc/qrc_musica_tmp.cpp.obj
 
+# =============================================================================
+# Object build statements for EXECUTABLE target pruebas_logica
+
+
+#############################################
+# Order-only phony target for pruebas_logica
+
+build cmake_object_order_depends_target_pruebas_logica: phony || pruebas_logica_autogen pruebas_logica_autogen/mocs_compilation.cpp pruebas_logica_autogen/timestamp pruebas_logica_autogen_timestamp_deps
+
+build CMakeFiles/pruebas_logica.dir/pruebas_logica_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\pruebas_logica_autogen\mocs_compilation.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir\pruebas_logica_autogen
+
+build CMakeFiles/pruebas_logica.dir/Pruebas.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/Pruebas.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\Pruebas.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/entidad.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/entidad.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\entidad.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/fisicaparabolica.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/fisicaparabolica.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\fisicaparabolica.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/fisicapendular.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/fisicapendular.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\fisicapendular.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/fisicaarrastre.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/fisicaarrastre.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\fisicaarrastre.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/fisicaonda.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/fisicaonda.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\fisicaonda.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/personaje.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/personaje.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\personaje.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/proyectil.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/proyectil.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\proyectil.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/morty.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/morty.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\morty.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/rick.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/rick.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\rick.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/bananamutante.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/bananamutante.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\bananamutante.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/configuraciondificultad.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/configuraciondificultad.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\configuraciondificultad.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/moduloaprendizaje.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/moduloaprendizaje.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\moduloaprendizaje.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/modulopercepcion.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/modulopercepcion.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\modulopercepcion.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/modulorazonamiento.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/modulorazonamiento.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\modulorazonamiento.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/moduloaccion.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/moduloaccion.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\moduloaccion.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/palmerajefe.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/palmerajefe.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\palmerajefe.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/nivel.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/nivel.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\nivel.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/nivelplantacion.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/nivelplantacion.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\nivelplantacion.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+build CMakeFiles/pruebas_logica.dir/niveljefe.cpp.obj: CXX_COMPILER__pruebas_logica_unscanned_Release C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/niveljefe.cpp || cmake_object_order_depends_target_pruebas_logica
+  DEFINES = -DRUTA_MAPA="\"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/recursos/MapaRitmo.txt\""
+  DEP_FILE = CMakeFiles\pruebas_logica.dir\niveljefe.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/include"
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  OBJECT_FILE_DIR = CMakeFiles\pruebas_logica.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pruebas_logica
+
+
+#############################################
+# Link the executable pruebas_logica.exe
+
+build pruebas_logica.exe: CXX_EXECUTABLE_LINKER__pruebas_logica_Release CMakeFiles/pruebas_logica.dir/pruebas_logica_autogen/mocs_compilation.cpp.obj CMakeFiles/pruebas_logica.dir/Pruebas.cpp.obj CMakeFiles/pruebas_logica.dir/entidad.cpp.obj CMakeFiles/pruebas_logica.dir/fisicaparabolica.cpp.obj CMakeFiles/pruebas_logica.dir/fisicapendular.cpp.obj CMakeFiles/pruebas_logica.dir/fisicaarrastre.cpp.obj CMakeFiles/pruebas_logica.dir/fisicaonda.cpp.obj CMakeFiles/pruebas_logica.dir/personaje.cpp.obj CMakeFiles/pruebas_logica.dir/proyectil.cpp.obj CMakeFiles/pruebas_logica.dir/morty.cpp.obj CMakeFiles/pruebas_logica.dir/rick.cpp.obj CMakeFiles/pruebas_logica.dir/bananamutante.cpp.obj CMakeFiles/pruebas_logica.dir/configuraciondificultad.cpp.obj CMakeFiles/pruebas_logica.dir/moduloaprendizaje.cpp.obj CMakeFiles/pruebas_logica.dir/modulopercepcion.cpp.obj CMakeFiles/pruebas_logica.dir/modulorazonamiento.cpp.obj CMakeFiles/pruebas_logica.dir/moduloaccion.cpp.obj CMakeFiles/pruebas_logica.dir/palmerajefe.cpp.obj CMakeFiles/pruebas_logica.dir/nivel.cpp.obj CMakeFiles/pruebas_logica.dir/nivelplantacion.cpp.obj CMakeFiles/pruebas_logica.dir/niveljefe.cpp.obj || pruebas_logica_autogen pruebas_logica_autogen_timestamp_deps
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\pruebas_logica.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = pruebas_logica.exe
+  TARGET_IMPLIB = libpruebas_logica.dll.a
+  TARGET_PDB = pruebas_logica.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -387,6 +582,18 @@ build proyecto_final_autogen: phony CMakeFiles/proyecto_final_autogen proyecto_f
 
 
 #############################################
+# Utility command for pruebas_logica_autogen_timestamp_deps
+
+build pruebas_logica_autogen_timestamp_deps: phony
+
+
+#############################################
+# Utility command for pruebas_logica_autogen
+
+build pruebas_logica_autogen: phony CMakeFiles/pruebas_logica_autogen pruebas_logica_autogen/include/ui_mainwindow.h pruebas_logica_autogen/timestamp pruebas_logica_autogen/mocs_compilation.cpp pruebas_logica_autogen_timestamp_deps
+
+
+#############################################
 # Custom command for .rcc\qrc_recursos.cpp
 
 build .rcc/qrc_recursos.cpp | ${cmake_ninja_workdir}.rcc/qrc_recursos.cpp: CUSTOM_COMMAND C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/MapaRitmo.txt C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/banana_atacar.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/banana_caminar.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/banana_danado.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/banana_idle.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/banana_rotar.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/cielo.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/efecto_hojas.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/efecto_impacto.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/efecto_onda.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/fondo_frontal.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/jaula_idle.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/jaula_liberar.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/montanas.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/morty_atacar.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/morty_caminar.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/morty_correr.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/morty_danado.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/morty_idle.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/morty_liana.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/morty_soltar.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/nivel1.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/nivel2.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/palmera_ataques.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/palmera_f1_ataque.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/palmera_f1_idle.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/palmera_f2_ataque.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/palmera_f2_idle.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/palmera_golpe.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/palmera_idle.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/palmera_muerte.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/plataforma.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/platanal.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/proyectiles_banano.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/proyectiles_explosion.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/proyectiles_hojas.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/proyectiles_onda.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/proyectiles_racimo.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/racimo_brillo.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/racimo_idle.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/rick_atacar.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/rick_caminar.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/rick_correr.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/rick_danado.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/rick_espalda_caminar.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/rick_espalda_golpe.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/rick_espalda_idle.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/rick_idle.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/soldado_disparar.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/soldado_idle.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/soldado_muerte.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/trabajador_agradecer.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/trabajador_caminar.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/trabajador_correr.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/trabajador_huir.png C$:/Users/Jose$ Gabriel$ Giraldo/OneDrive/Documentos/Universidad/Sexto$ semestre/Info/proyecto_final/recursos/trabajador_idle.png .rcc/recursos.qrc C$:/Qt/6.6.3/mingw_64/./bin/rcc.exe || proyecto_final_autogen proyecto_final_autogen_timestamp_deps proyecto_final_musica_obj
@@ -425,14 +632,33 @@ build .rcc/qrc_musica_tmp.cpp | ${cmake_ninja_workdir}.rcc/qrc_musica_tmp.cpp: C
 
 
 #############################################
+# Custom command for pruebas_logica_autogen\timestamp
+
+build pruebas_logica_autogen/timestamp pruebas_logica_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}pruebas_logica_autogen/timestamp ${cmake_ninja_workdir}pruebas_logica_autogen/mocs_compilation.cpp: CUSTOM_COMMAND C$:/Qt/6.6.3/mingw_64/./bin/moc.exe C$:/Qt/6.6.3/mingw_64/./bin/uic.exe || pruebas_logica_autogen_timestamp_deps
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Jose Gabriel Giraldo\OneDrive\Documentos\Universidad\Sexto semestre\Info\proyecto_final\build\Desktop_Qt_6_6_3_MinGW_64_bit-Release" && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen "C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/CMakeFiles/pruebas_logica_autogen.dir/AutogenInfo.json" Release && C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch "C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/timestamp" && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_transform_depfile Ninja gccdepfile "C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final" "C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final" "C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release" "C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release" "C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/pruebas_logica_autogen/deps" "C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/CMakeFiles/d/8be522e71c6e3f83d5a53f61ff34998b0b7ba5f67dc23271c2c693595074c15f.d""
+  DESC = Automatic MOC and UIC for target pruebas_logica
+  depfile = CMakeFiles\d\8be522e71c6e3f83d5a53f61ff34998b0b7ba5f67dc23271c2c693595074c15f.d
+  deps = gcc
+  restat = 1
+
+
+#############################################
 # Phony custom command for CMakeFiles\proyecto_final_autogen
 
 build CMakeFiles/proyecto_final_autogen proyecto_final_autogen/include/ui_mainwindow.h | ${cmake_ninja_workdir}CMakeFiles/proyecto_final_autogen ${cmake_ninja_workdir}proyecto_final_autogen/include/ui_mainwindow.h: phony proyecto_final_autogen/timestamp || proyecto_final_autogen_timestamp_deps
+
+
+#############################################
+# Phony custom command for CMakeFiles\pruebas_logica_autogen
+
+build CMakeFiles/pruebas_logica_autogen pruebas_logica_autogen/include/ui_mainwindow.h | ${cmake_ninja_workdir}CMakeFiles/pruebas_logica_autogen ${cmake_ninja_workdir}pruebas_logica_autogen/include/ui_mainwindow.h: phony pruebas_logica_autogen/timestamp || pruebas_logica_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.
 
 build proyecto_final: phony proyecto_final.exe
+
+build pruebas_logica: phony pruebas_logica.exe
 
 # =============================================================================
 # Folder targets.
@@ -442,7 +668,7 @@ build proyecto_final: phony proyecto_final.exe
 #############################################
 # Folder: C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release
 
-build all: phony proyecto_final.exe proyecto_final_musica_obj
+build all: phony proyecto_final.exe proyecto_final_musica_obj pruebas_logica.exe
 
 # =============================================================================
 # Built-in targets

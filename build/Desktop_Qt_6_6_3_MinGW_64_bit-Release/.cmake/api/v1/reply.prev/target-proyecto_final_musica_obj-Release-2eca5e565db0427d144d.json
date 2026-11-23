@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CMakeFiles/proyecto_final_musica_obj.dir/./c4526012aa640cfaf630f5a3ce7b4c5b/.rcc/qrc_musica_tmp.cpp.obj"
+			"path" : "CMakeFiles/proyecto_final_musica_obj.dir/./ddb28c00bff0e4ce123fc95e25df94f9/.rcc/qrc_musica_tmp.cpp.obj"
 		}
 	],
 	"backtrace" : 5,
@@ -30,7 +30,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 70,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
@@ -71,7 +71,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always"
+					"fragment" : "-O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always"
 				}
 			],
 			"defines" : 
@@ -83,6 +83,10 @@
 				{
 					"backtrace" : 6,
 					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_NO_DEBUG"
 				},
 				{
 					"backtrace" : 6,
@@ -154,13 +158,13 @@
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/.rcc/qrc_musica_tmp.cpp",
+			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/.rcc/qrc_musica_tmp.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/.rcc/qrc_musica_tmp.cpp.rule",
+			"path" : "build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/.rcc/qrc_musica_tmp.cpp.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

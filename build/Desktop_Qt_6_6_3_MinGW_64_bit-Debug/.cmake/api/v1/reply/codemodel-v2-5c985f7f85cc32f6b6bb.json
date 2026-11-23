@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-80a23cad7f0404c21942.json",
+					"jsonFile" : "directory-.-Debug-8af60bbbe192207bd8ab.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -19,7 +19,10 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4,
+						5,
+						6
 					]
 				}
 			],
@@ -37,7 +40,10 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4,
+						5,
+						6
 					]
 				}
 			],
@@ -46,7 +52,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "proyecto_final::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-proyecto_final-Debug-10dd7b19140935f1aaba.json",
+					"jsonFile" : "target-proyecto_final-Debug-de43109c360b6bd0815c.json",
 					"name" : "proyecto_final",
 					"projectIndex" : 0
 				},
@@ -67,8 +73,29 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "proyecto_final_musica_obj::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-proyecto_final_musica_obj-Debug-ccc6d7b2c80c0e57a7c6.json",
+					"jsonFile" : "target-proyecto_final_musica_obj-Debug-d2cdedbb2397626b840e.json",
 					"name" : "proyecto_final_musica_obj",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pruebas_logica::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pruebas_logica-Debug-cfbdd1ef9f93febe4559.json",
+					"name" : "pruebas_logica",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pruebas_logica_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pruebas_logica_autogen-Debug-17920a015def1ea33ec7.json",
+					"name" : "pruebas_logica_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pruebas_logica_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pruebas_logica_autogen_timestamp_deps-Debug-b3f8fa7faf928cf903ac.json",
+					"name" : "pruebas_logica_autogen_timestamp_deps",
 					"projectIndex" : 0
 				}
 			]
