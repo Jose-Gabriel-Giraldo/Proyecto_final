@@ -3,6 +3,7 @@
 
 #include "configuraciondificultad.h"
 #include "nivel.h"
+#include <array>
 #include <iosfwd>
 #include <map>
 #include <queue>
@@ -18,6 +19,7 @@ public:
     static const double ANCHO_PANTALLA;
     static const double ALTO_PANTALLA;
     static const double Y_SUELO;
+    static const double Y_HORIZONTE;
 
     NivelJefe(const ConfiguracionDificultad& config, unsigned semilla = std::random_device{}());
     ~NivelJefe() override;
@@ -26,6 +28,7 @@ public:
     void sincronizar(long long posMs);
     void actualizar(double dt) override;
     void procesarEntrada(int a, bool presionada) override;
+    void dispararHacia(double x, double y);
 
     const Rick& getRick() const;
     const PalmeraJefe& getPalmera() const;
@@ -36,25 +39,26 @@ public:
     long long getDuracionMs() const;
     double getMsPorBeat() const;
     int getIntensidadActual() const;
+    const std::vector<std::array<double, 4>>& getPlataformas() const;
 
 private:
     void procesarRitmo();
     void lanzarAtaque(bool programarContratiempo);
     void resolverColisiones();
-    int mutantesVivos() const;
     void alEliminarProyectil(const Proyectil& p) override;
 
     ConfiguracionDificultad config;
     Rick* rick;
     PalmeraJefe* palmera;
     std::vector<BananaMutante*> mutantes;
+    std::vector<std::array<double, 4>> plataformas;
     std::queue<long long> beats;
     std::queue<int> intensidades;
     std::map<int, int> vivosPorAtaque;
     double msPorBeat, posCancionMs, proximoContratiempo;
     long long duracionMs;
     int contadorBeats, idAtaqueMutantes, intensidadActual;
-    bool izquierda, derecha, disparando;
+    bool izquierda, derecha;
     std::mt19937 generador;
 };
 

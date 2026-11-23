@@ -6,5 +6,6 @@ if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "Debug")
   "CMakeFiles\\proyecto_final_autogen.dir\\AutogenUsed.txt"
   "CMakeFiles\\proyecto_final_autogen.dir\\ParseCache.txt"
   "proyecto_final_autogen"
+  "proyecto_final_musica_obj_autogen"
   )
 endif()

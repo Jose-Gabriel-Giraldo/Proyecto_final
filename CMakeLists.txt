@@ -11,6 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(Qt${QT_VERSION_MAJOR} QUIET COMPONENTS Multimedia)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -43,6 +44,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         nivel.h nivel.cpp
         nivelplantacion.h nivelplantacion.cpp
         niveljefe.h niveljefe.cpp
+        animacion.h animacion.cpp
+        vistaplantacion.h vistaplantacion.cpp
+        vistajefe.h vistajefe.cpp
+        cinematica.h cinematica.cpp
+        fisicaonda.h fisicaonda.cpp
     )
 else()
     if(ANDROID)
@@ -56,7 +62,19 @@ else()
     endif()
 endif()
 
+file(GLOB RECURSOS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} CONFIGURE_DEPENDS recursos/*.png recursos/*.txt)
+qt_add_resources(proyecto_final "recursos" PREFIX "/" BASE recursos FILES ${RECURSOS})
+
 target_link_libraries(proyecto_final PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+
+if(TARGET Qt${QT_VERSION_MAJOR}::Multimedia AND EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/recursos/musica.mp3)
+    qt_add_resources(proyecto_final "musica" PREFIX "/" BASE recursos BIG_RESOURCES FILES recursos/musica.mp3)
+    target_link_libraries(proyecto_final PRIVATE Qt${QT_VERSION_MAJOR}::Multimedia)
+    target_compile_definitions(proyecto_final PRIVATE CON_MUSICA)
+    message(STATUS "Musica activada")
+else()
+    message(STATUS "Sin Qt Multimedia o sin recursos/musica.mp3: el nivel 2 corre sin musica")
+endif()
 
 if(${QT_VERSION} VERSION_LESS 6.1.0)
   set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.proyecto_final)
@@ -66,7 +84,7 @@ set_target_properties(proyecto_final PROPERTIES
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
     MACOSX_BUNDLE TRUE
-    WIN32_EXECUTABLE FALSE
+    WIN32_EXECUTABLE TRUE
 )
 
 include(GNUInstallDirs)

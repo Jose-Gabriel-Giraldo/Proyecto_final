@@ -13,6 +13,7 @@ class BananaMutante;
 class ModuloAccion {
 public:
     ModuloAccion(const ModuloRazonamiento& razonamiento, ModuloAprendizaje& aprendizaje, unsigned semilla);
+    static Proyectil* crearRacimo(double xBoca, double yBoca, double xObjetivo, double ySuelo, double T, int id);
     int ejecutar(double xBoca, double yBoca, double ySuelo, int mutantesVivos, const ConfiguracionDificultad& config,
                  std::vector<Proyectil*>& proyectiles, std::vector<BananaMutante*>& invocados);
 

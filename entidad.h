@@ -25,6 +25,7 @@ public:
     ModeloFisico* getFisica() const;
 
     void setPosicion(double nx, double ny);
+    void setTamano(double nAncho, double nAlto);
     void setVelocidad(double nvx, double nvy);
     void setFisica(ModeloFisico* nueva);
     void desactivar();

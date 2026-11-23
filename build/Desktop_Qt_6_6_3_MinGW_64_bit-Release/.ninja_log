@@ -1,0 +1,122 @@
+# ninja log v6
+7768	15136	8167406414274789	CMakeFiles/proyecto_final.dir/mainwindow.cpp.obj	bb4156272d317ef7
+841	6746	8167406397140504	proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+5354	8581	8167397680566214	CMakeFiles/proyecto_final.dir/palmerajefe.cpp.obj	3a84654c4bc094cb
+841	6746	8167406397140504	proyecto_final_autogen/timestamp	84356f29d84097c8
+1750	7033	8167409549188460	build.ninja	77a22ff79c207bd4
+3613	8019	8167397663149592	CMakeFiles/proyecto_final.dir/moduloaprendizaje.cpp.obj	1c3bc6f872a3f09
+35	805	8167406336936057	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/CMakeFiles/cmake.verify_globs	3703e32b9066679f
+758	1975	8166372498369588	CMakeFiles/proyecto_final_musica_obj.dir/ddb28c00bff0e4ce123fc95e25df94f9/.rcc/qrc_musica_tmp.cpp.obj	3c40bb4df4b8e7b0
+163	758	8166372497954287	.rcc/qrc_musica_tmp.cpp	5ff89910ab06d22
+163	758	8166372497954287	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/.rcc/qrc_musica_tmp.cpp	5ff89910ab06d22
+10842	26793	8167395744364666	CMakeFiles/proyecto_final.dir/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/.rcc/qrc_recursos.cpp.obj	89cd669cebcd1b7b
+841	6746	8167406397140504	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/timestamp	84356f29d84097c8
+841	6746	8167406397140504	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+3947	4888	8167395684289172	.rcc/qrc_recursos.cpp	c4df224fa91e69c1
+5393	6135	8166372551780731	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/.rcc/qrc_musica.obj	cb9f59a35031a8e
+3947	4888	8167395684289172	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/.rcc/qrc_recursos.cpp	c4df224fa91e69c1
+4387	8254	8167397670888237	CMakeFiles/proyecto_final.dir/modulorazonamiento.cpp.obj	9328d3025c4da461
+4042	8023	8167397667445004	CMakeFiles/proyecto_final.dir/modulopercepcion.cpp.obj	ecf6769f62975c28
+5393	6135	8166372551780731	.rcc/qrc_musica.obj	cb9f59a35031a8e
+17764	23252	8167406514235119	proyecto_final.exe	27b097c4055714bf
+6749	13422	8167406404070690	CMakeFiles/proyecto_final.dir/proyecto_final_autogen/mocs_compilation.cpp.obj	e6d1f2d3a45e4cc
+7524	13102	8166372566034596	CMakeFiles/proyecto_final.dir/entidad.cpp.obj	6e50289b7fc1b14b
+8138	14633	8166372572168760	CMakeFiles/proyecto_final.dir/fisicaparabolica.cpp.obj	606dfe1d98e1c931
+8769	16367	8166372578490710	CMakeFiles/proyecto_final.dir/fisicapendular.cpp.obj	e84213f7e95a383e
+7266	13685	8167406409235240	CMakeFiles/proyecto_final.dir/main.cpp.obj	8cce7ce0be2f092c
+9676	17765	8166372587559744	CMakeFiles/proyecto_final.dir/fisicaarrastre.cpp.obj	488c5367b48bdfae
+10462	18414	8166372595416632	CMakeFiles/proyecto_final.dir/personaje.cpp.obj	fbec8e28c5e7d5fe
+2202	6442	8167397649046712	CMakeFiles/proyecto_final.dir/proyectil.cpp.obj	a94813f02030d70d
+2471	6783	8167397651707298	CMakeFiles/proyecto_final.dir/morty.cpp.obj	8b9dd2747e0ce0f2
+8333	12939	8167406419901594	CMakeFiles/proyecto_final.dir/rick.cpp.obj	d509d21668e82e10
+3245	7561	8167397659465805	CMakeFiles/proyecto_final.dir/bananamutante.cpp.obj	ea95ec8486e1aee4
+15624	23343	8166372647043798	CMakeFiles/proyecto_final.dir/configuraciondificultad.cpp.obj	78edc019f6f7810
+4811	8528	8167397675128742	CMakeFiles/proyecto_final.dir/moduloaccion.cpp.obj	a915a7f0b03c063e
+5797	8562	8167397685005330	CMakeFiles/proyecto_final.dir/nivel.cpp.obj	f69c44b8bf6aca6a
+6443	9005	8167397691461371	CMakeFiles/proyecto_final.dir/nivelplantacion.cpp.obj	12f2ab3b261d2ce3
+8832	15023	8167406424901842	CMakeFiles/proyecto_final.dir/niveljefe.cpp.obj	81fd2cb65fba732
+22530	28952	8166372716107931	CMakeFiles/proyecto_final.dir/animacion.cpp.obj	b34a46bd013b93a9
+7144	12362	8167397698466764	CMakeFiles/proyecto_final.dir/vistaplantacion.cpp.obj	f0af92795d2d8c58
+10236	16876	8167406438955637	CMakeFiles/proyecto_final.dir/cinematica.cpp.obj	987e587e71c9ecb2
+9526	17764	8167406431850557	CMakeFiles/proyecto_final.dir/vistajefe.cpp.obj	5326991c38da1d6a
+41	880	8167410604462331	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/CMakeFiles/cmake.verify_globs	3703e32b9066679f
+914	4459	8167410613187233	proyecto_final_autogen/timestamp	84356f29d84097c8
+914	4459	8167410613187233	proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+914	4459	8167410613187233	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/timestamp	84356f29d84097c8
+914	4459	8167410613187233	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+4465	13462	8167410648650461	CMakeFiles/proyecto_final.dir/entidad.cpp.obj	6e50289b7fc1b14b
+5021	14417	8167410654254618	CMakeFiles/proyecto_final.dir/fisicaparabolica.cpp.obj	606dfe1d98e1c931
+5774	15500	8167410661774913	CMakeFiles/proyecto_final.dir/fisicapendular.cpp.obj	e84213f7e95a383e
+6534	16536	8167410669379524	CMakeFiles/proyecto_final.dir/fisicaarrastre.cpp.obj	488c5367b48bdfae
+7347	17567	8167410677522354	CMakeFiles/proyecto_final.dir/personaje.cpp.obj	fbec8e28c5e7d5fe
+8409	18533	8167410688127869	CMakeFiles/proyecto_final.dir/proyectil.cpp.obj	a94813f02030d70d
+9471	19316	8167410698745547	CMakeFiles/proyecto_final.dir/morty.cpp.obj	8b9dd2747e0ce0f2
+10330	20261	8167410707353436	CMakeFiles/proyecto_final.dir/rick.cpp.obj	d509d21668e82e10
+11365	21182	8167410717702371	CMakeFiles/proyecto_final.dir/bananamutante.cpp.obj	ea95ec8486e1aee4
+12472	22144	8167410728767628	CMakeFiles/proyecto_final.dir/moduloaprendizaje.cpp.obj	1c3bc6f872a3f09
+13463	22918	8167410738679143	CMakeFiles/proyecto_final.dir/modulopercepcion.cpp.obj	ecf6769f62975c28
+14418	22924	8167410748225880	CMakeFiles/proyecto_final.dir/modulorazonamiento.cpp.obj	9328d3025c4da461
+15501	22936	8167410759064113	CMakeFiles/proyecto_final.dir/moduloaccion.cpp.obj	a915a7f0b03c063e
+16537	23318	8167410769418746	CMakeFiles/proyecto_final.dir/palmerajefe.cpp.obj	3a84654c4bc094cb
+17568	23387	8167410779728104	CMakeFiles/proyecto_final.dir/nivel.cpp.obj	f69c44b8bf6aca6a
+18534	23892	8167410789389391	CMakeFiles/proyecto_final.dir/nivelplantacion.cpp.obj	12f2ab3b261d2ce3
+19317	25166	8167410797219425	CMakeFiles/proyecto_final.dir/niveljefe.cpp.obj	81fd2cb65fba732
+22145	25623	8167410825500470	CMakeFiles/proyecto_final.dir/fisicaonda.cpp.obj	125caa41e6b0d167
+20262	29060	8167410806667053	CMakeFiles/proyecto_final.dir/vistaplantacion.cpp.obj	f0af92795d2d8c58
+21183	29794	8167410815876906	CMakeFiles/proyecto_final.dir/vistajefe.cpp.obj	5326991c38da1d6a
+29795	34579	8167410901988979	proyecto_final.exe	c6dcca0a7224921a
+23	171	8167412796153617	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/CMakeFiles/cmake.verify_globs	3703e32b9066679f
+191	2789	8167412797832201	proyecto_final_autogen/timestamp	84356f29d84097c8
+191	2789	8167412797832201	proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+191	2789	8167412797832201	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/timestamp	84356f29d84097c8
+191	2789	8167412797832201	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+2792	4501	8167412823839732	CMakeFiles/proyecto_final.dir/rick.cpp.obj	d509d21668e82e10
+3244	6161	8167412828365412	CMakeFiles/proyecto_final.dir/niveljefe.cpp.obj	81fd2cb65fba732
+6162	12616	8167412857552388	proyecto_final.exe	c6dcca0a7224921a
+26	194	8167414375051932	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/CMakeFiles/cmake.verify_globs	3703e32b9066679f
+214	2333	8167414376923687	proyecto_final_autogen/timestamp	84356f29d84097c8
+214	2333	8167414376923687	proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+214	2333	8167414376923687	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/timestamp	84356f29d84097c8
+214	2333	8167414376923687	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+2337	4720	8167414398161332	CMakeFiles/proyecto_final.dir/niveljefe.cpp.obj	81fd2cb65fba732
+4720	9423	8167414421987446	proyecto_final.exe	c6dcca0a7224921a
+22	222	8167416276514514	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/CMakeFiles/cmake.verify_globs	3703e32b9066679f
+241	2176	8167416278707025	proyecto_final_autogen/timestamp	84356f29d84097c8
+241	2176	8167416278707025	proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+241	2176	8167416278707025	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/timestamp	84356f29d84097c8
+241	2176	8167416278707025	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+2179	3720	8167416298089809	CMakeFiles/proyecto_final.dir/palmerajefe.cpp.obj	3a84654c4bc094cb
+3721	9077	8167416313510609	proyecto_final.exe	c6dcca0a7224921a
+24	245	8167416465884700	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/CMakeFiles/cmake.verify_globs	3703e32b9066679f
+30	202	8167418186516372	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/CMakeFiles/cmake.verify_globs	3703e32b9066679f
+221	2372	8167418188425543	proyecto_final_autogen/timestamp	84356f29d84097c8
+221	2372	8167418188425543	proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+221	2372	8167418188425543	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/timestamp	84356f29d84097c8
+221	2372	8167418188425543	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+2375	4715	8167418209968027	CMakeFiles/proyecto_final.dir/niveljefe.cpp.obj	81fd2cb65fba732
+4716	9541	8167418233371813	proyecto_final.exe	c6dcca0a7224921a
+39	379	8167422185544873	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/CMakeFiles/cmake.verify_globs	3703e32b9066679f
+418	3963	8167422189311714	proyecto_final_autogen/timestamp	84356f29d84097c8
+418	3963	8167422189311714	proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+418	3963	8167422189311714	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/timestamp	84356f29d84097c8
+418	3963	8167422189311714	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+3967	9773	8167422224817521	CMakeFiles/proyecto_final.dir/niveljefe.cpp.obj	81fd2cb65fba732
+4530	14461	8167422230447250	CMakeFiles/proyecto_final.dir/vistajefe.cpp.obj	5326991c38da1d6a
+19	173	8167422589690853	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/CMakeFiles/cmake.verify_globs	3703e32b9066679f
+194	4930	8167422591402408	proyecto_final.exe	c6dcca0a7224921a
+29	497	8167426239324599	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/CMakeFiles/cmake.verify_globs	3703e32b9066679f
+517	2254	8167426244204283	proyecto_final_autogen/timestamp	84356f29d84097c8
+517	2254	8167426244204283	proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+517	2254	8167426244204283	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/timestamp	84356f29d84097c8
+517	2254	8167426244204283	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+2258	5544	8167426261619058	CMakeFiles/proyecto_final.dir/main.cpp.obj	8cce7ce0be2f092c
+5544	10347	8167426294484662	proyecto_final.exe	c6dcca0a7224921a
+34	235	8167429350466482	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/CMakeFiles/cmake.verify_globs	3703e32b9066679f
+256	2879	8167429352678786	proyecto_final_autogen/timestamp	84356f29d84097c8
+256	2879	8167429352678786	proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+256	2879	8167429352678786	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/timestamp	84356f29d84097c8
+256	2879	8167429352678786	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/proyecto_final_autogen/mocs_compilation.cpp	84356f29d84097c8
+2884	9987	8167429378974074	CMakeFiles/proyecto_final.dir/mainwindow.cpp.obj	bb4156272d317ef7
+3552	10401	8167429385650771	CMakeFiles/proyecto_final.dir/cinematica.cpp.obj	987e587e71c9ecb2
+10402	15952	8167429454140409	proyecto_final.exe	c6dcca0a7224921a
+101	288	8167584572216098	C:/Users/Jose Gabriel Giraldo/OneDrive/Documentos/Universidad/Sexto semestre/Info/proyecto_final/build/Desktop_Qt_6_6_3_MinGW_64_bit-Release/CMakeFiles/cmake.verify_globs	3703e32b9066679f

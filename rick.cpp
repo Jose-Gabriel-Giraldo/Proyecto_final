@@ -4,7 +4,7 @@
 #include <cmath>
 
 Rick::Rick(double x, double y, double xMin, double xMax)
-    : Personaje(x, y, 60, 120, 8, new FisicaParabolica(1400.0)), combo(0), dirMovimiento(0), multiplicador(1.0),
+    : Personaje(x, y, 60, 120, 6, new FisicaParabolica(1400.0)), combo(0), dirMovimiento(0), multiplicador(1.0),
     recargaPortal(0), aturdido(0), recargaDisparo(0), tiempoDesdePortal(100), xMin(xMin), xMax(xMax) {}
 
 void Rick::actualizar(double dt) {
@@ -28,6 +28,17 @@ Proyectil* Rick::disparar() {
     int danio = static_cast<int>(std::lround(10 * multiplicador));
     return new Proyectil(x + ancho, y + 45, 900.0, 0, 30, 10, danio, true, PROYECTIL_RAYO_RICK,
                          nullptr, -1, 1.2);
+}
+
+Proyectil* Rick::dispararHacia(double objetivoX, double objetivoY) {
+    if (aturdido > 0 || recargaDisparo > 0) return nullptr;
+    double ox = getCentroX(), oy = y + 15;
+    double dx = objetivoX - ox, dy = objetivoY - oy, d = std::hypot(dx, dy);
+    if (d < 1) return nullptr;
+    recargaDisparo = 0.2;
+    int danio = static_cast<int>(std::lround(10 * multiplicador));
+    return new Proyectil(ox - 12, oy - 12, 1300.0 * dx / d, 1300.0 * dy / d, 24, 24, danio, true, PROYECTIL_RAYO_RICK,
+                         nullptr, -1, 2.0);
 }
 
 void Rick::recibirDanio(int d) {

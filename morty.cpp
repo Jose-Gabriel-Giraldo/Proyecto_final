@@ -7,7 +7,9 @@
 Morty::Morty(double x, double y)
     : Personaje(x, y, 50, 90, 5, new FisicaParabolica(1400.0)), valor(0), tiempoValentia(0), tiempoCansancio(0),
     recargaDisparo(0), enemigosCerca(0), liberados(0), dirMovimiento(0), corriendo(false), liberando(false),
-    liana(nullptr), generador(std::random_device{}()) {}
+    liana(nullptr), generador(std::random_device{}()) {
+    duracionInvulnerable = 0.7;
+}
 
 void Morty::actualizar(double dt) {
     actualizarInvulnerabilidad(dt);

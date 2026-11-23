@@ -1,0 +1,11 @@
+# Additional clean files
+cmake_minimum_required(VERSION 3.16)
+
+if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "Release")
+  file(REMOVE_RECURSE
+  "CMakeFiles\\proyecto_final_autogen.dir\\AutogenUsed.txt"
+  "CMakeFiles\\proyecto_final_autogen.dir\\ParseCache.txt"
+  "proyecto_final_autogen"
+  "proyecto_final_musica_obj_autogen"
+  )
+endif()

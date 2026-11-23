@@ -31,6 +31,16 @@ rule CXX_EXECUTABLE_LINKER__proyecto_final_Debug
 
 
 #############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__proyecto_final_musica_obj_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\Qt\Tools\mingw1120_64\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
 # Rule for running custom commands.
 
 rule CUSTOM_COMMAND
@@ -44,6 +54,15 @@ rule CUSTOM_COMMAND
 rule RERUN_CMAKE
   command = C:\Qt\Tools\CMake_64\bin\cmake.exe --regenerate-during-build -S"C:\Users\Jose Gabriel Giraldo\OneDrive\Documentos\Universidad\Sexto semestre\Info\proyecto_final" -B"C:\Users\Jose Gabriel Giraldo\OneDrive\Documentos\Universidad\Sexto semestre\Info\proyecto_final\build\Desktop_Qt_6_6_3_MinGW_64_bit-Debug"
   description = Re-running CMake...
+  generator = 1
+
+
+#############################################
+# Rule for re-checking globbed directories.
+
+rule VERIFY_GLOBS
+  command = C:\Qt\Tools\CMake_64\bin\cmake.exe -P "C:\Users\Jose Gabriel Giraldo\OneDrive\Documentos\Universidad\Sexto semestre\Info\proyecto_final\build\Desktop_Qt_6_6_3_MinGW_64_bit-Debug\CMakeFiles\VerifyGlobs.cmake"
+  description = Re-checking globbed directories...
   generator = 1
 
 

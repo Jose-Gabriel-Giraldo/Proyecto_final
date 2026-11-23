@@ -23,7 +23,10 @@ public:
     void recibirDanio(int d) override;
 
     void preparar(long long tiempoMs, bool contratiempo, int mutantesVivos);
-    int lanzar(int mutantesVivos, std::vector<Proyectil*>& proyectiles, std::vector<BananaMutante*>& invocados);
+    int lanzar(int mutantesVivos, double ySuelo, std::vector<Proyectil*>& proyectiles,
+               std::vector<BananaMutante*>& invocados);
+    double getXBoca() const;
+    double getYBoca() const;
     void notificarResultado(int idAtaque, bool impacto);
 
     int getFase() const;
@@ -43,6 +46,8 @@ private:
     ModuloAccion* accion;
     bool pendiente;
     long long tiempoPendiente;
+    int dirMovimiento;
+    double xMin, xMax;
 };
 
 #endif

@@ -9,6 +9,7 @@ const int PROYECTIL_RAYO_RICK = 2;
 const int PROYECTIL_BANANO = 3;
 const int PROYECTIL_RACIMO = 4;
 const int PROYECTIL_HOJA = 5;
+const int PROYECTIL_ONDA = 6;
 
 const int NIVEL_EN_CURSO = 0;
 const int NIVEL_GANADO = 1;
@@ -40,5 +41,6 @@ const int EVENTO_ENEMIGO_DERROTADO = 2;
 const int EVENTO_TRABAJADOR_LIBERADO = 3;
 const int EVENTO_ATAQUE_JEFE = 4;
 const int EVENTO_CAMBIO_FASE = 5;
+const int EVENTO_RACIMO_DESTRUIDO = 6;
 
 #endif
